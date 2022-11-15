@@ -1,0 +1,22 @@
+# Site settings
+
+title: RISORSE
+
+description: > # this means to ignore newlines until "baseurl:"
+  RISORSE Associazione Culturale - ODV - ETS
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://www.risorse-associazione.org/" # the base hostname & protocol for your site
+excerpt_separator: <!--more-->
+
+exclude: ['README.md', 'LICENSE', 'CNAME']
+encoding: utf-8
+plugins:
+  - jekyll-sitemap
+  - jekyll-redirect-from
+
+collections:
+  eventi:
+    output: true
+  relatori:
+    output: true
