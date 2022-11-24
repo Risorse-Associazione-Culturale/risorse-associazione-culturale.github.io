@@ -9,7 +9,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "https://www.risorse-associazione.org/" # the base hostname & protocol for your site
 excerpt_separator: <!--more-->
 
-exclude: ['README.md', 'LICENSE', 'CNAME']
+exclude: ['README.md', 'LICENSE', 'CNAME', 'docker-compose.yml']
 encoding: utf-8
 plugins:
   - jekyll-sitemap
