@@ -1,9 +1,0 @@
-services:
-  jekyll:
-    # can be moved to latest as soon as 4.3.0 is out. It fixes https://github.com/jekyll/jekyll/issues/9066
-    image: jekyll/jekyll:4.2.0
-    command: jekyll serve --watch --force_polling --verbose --livereload --incremental
-    ports:
-      - 4000:4000
-    volumes:
-      - .:/srv/jekyll
