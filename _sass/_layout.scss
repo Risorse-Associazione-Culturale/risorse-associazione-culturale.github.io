@@ -1,0 +1,99 @@
+// Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  
+	
+}
+
+.border-none{
+	border-width: 0 !important;
+}
+
+.transparent{
+	background-color: transparent !important;
+}
+
+.inherit-color{
+	color: inherit !important;
+}
+
+.content
+{
+	margin-top: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+	
+	@media screen and (max-width: $break-small) {
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+}
+
+.home{
+	.site-description{
+		text-align: justify;
+		text-justify: newspaper;
+	}
+
+	.upcoming-event{
+		background-color: #f5f5f5;
+		
+		.upcoming-event-details{
+			padding-left: .5rem
+		}
+	}
+}
+
+.site-footer{
+	padding-top: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	margin-left: 5%;
+	margin-right: 5%;
+	
+	border-top-style: solid;
+	border-top-width: 1px;
+	border-top-color: $grey-color-dark;
+	
+	ul.links-list{
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+	}
+	
+	ul.right-links-list{
+		text-align: right;
+	}
+	
+	ul.left-links-list{
+
+	}
+	
+	.footer-heading{
+        	color: $grey-color-light;
+	}
+	
+	.wrapper{
+    		.text{
+      			color: $grey-color-light;
+      			font-style: italic;
+    		}
+	}
+}
+
+
+
+.page{
+	
+	.page-content{}
+
+	.page-footer{
+		.page-meta{
+			font-size: $small-font-size;
+			color: $grey-color;
+		}
+	}
+}
