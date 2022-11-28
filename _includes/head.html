@@ -1,0 +1,41 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv='Content-Type' content='text/html; charset=utf-8' />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+
+{% assign kw = nil %}
+{% if page.keywords %}
+  {% assign kw = page.keywords %}
+{% else if page.tags %}
+  {% assign kw = page.tags %}
+{% endif %}
+{% if kw %}
+  {% assign kw_string = "" %}
+  {% for k in kw %}
+    {% assign kw_string = kw_string | append: k | append: ', ' %}
+  {% endfor %}
+    <meta name="keywords" content="{{ kw_string }}"/>
+{% endif %}
+
+  <meta property="og:locale" content="it_IT" />
+  <meta property="og:site_name" content="Risorse Associazione" />
+  <meta property="og:title" content="{% if page.og_title %}{{ page.og_title }}{% elsif page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+  <meta property="og:description" content="{% if page.og_description %}{{ page.og_description }}{% elsif page.synopsis %}{{ page.synopsis | truncate: 160 }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+{% if page.og_image or page.header_image %}
+  <meta property="og:image" content="{% if page.og_image %}{{ page.og_image | prepend: site.baseurl | prepend: site.url }}{% elsif page.header_image %}{{ page.header_image | prepend: site.baseurl | prepend: site.url }}{% endif %}" />
+{% endif %}
+  
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <!-- local CSS -->
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+  <link rel="shortcut icon" href="{{ "/favicon.ico" | prepend: site.baseurl }}">
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="{{ "/scripts/readingTime.min.js" | prepend: site.baseurl }}"></script>
+</head>
