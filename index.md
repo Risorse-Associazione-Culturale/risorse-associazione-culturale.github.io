@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 ---
 
-Hello world!
+Benvenuti nel portale di RISORSE Associazione Culturale
