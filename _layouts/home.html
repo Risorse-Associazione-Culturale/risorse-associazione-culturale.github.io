@@ -1,0 +1,48 @@
+---
+layout: default
+---
+<div class="page">
+
+  <div class="bd-callout bd-callout-info">
+    {% include citazione.txt %}
+  </div>
+  <article class="page-content">
+    {{ content }}
+  </article>
+
+  {% assign upcomingevents = site.eventi | where: 'stato', 'futuro' | sort: 'calendario.inizio' %}
+  {% assign len = upcomingevents | size %}
+  {% if len > 0 %}
+    {% assign first_upcoming_event = upcomingevents[0] %}
+  
+  <div class="card">
+    <!-- <img src="..." class="card-img-top" alt="..."> -->
+    <div class="card-body">
+      <h5 class="card-title">{{ first_upcoming_event.titolo }}</h5>
+      <h6 class="card-subtitle mb-2 text-muted">{{ first_upcoming_event.luogo }}</h6>
+      <h6 class="card-subtitle mb-2 text-muted">{{ first_upcoming_event.calendario.inizio | date_to_rfc822 | date: "%B %-d, %Y" }}</h6>
+      <p class="card-text">{{ first_upcoming_event.abstract }}</p>
+      <a href="#" class="card-link">Dettagli...</a>
+    </div>
+  </div>
+
+    {% if len > 1 %}
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+      {% for upcoming_event in upcomingevents limit: 4 offset: 1 %}
+
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="card-title">{{ upcoming_event.titolo }}</h5>
+          <h7 class="card-subtitle mb-2 text-muted">{{ upcoming_event.luogo }}</h6>
+          <h7 class="card-subtitle mb-2 text-muted">{{ upcoming_event.calendario.inizio | date_to_rfc822 | date: "%B %-d, %Y" }}</h6>
+          <p class="card-text">{{ upcoming_event.abstract }}</p>
+          <a href="#" class="card-link">Dettagli...</a>
+        </div>
+      </div>
+    </div>
+
+      {% endfor %}
+  </div>
+    {% endif %}
+  {% endif %}
