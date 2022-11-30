@@ -8,7 +8,6 @@ layout: default
   </article>
 
   {% assign past_events = site.eventi | where: 'stato', 'completato' | sort: 'calendario.inizio' | reverse %}
-    {% if len > 0 %}
   <div class="row row-cols-1 row-cols-md-2 g-4">
       {% for event in past_events %}
 
@@ -26,4 +25,3 @@ layout: default
 
       {% endfor %}
   </div>
-    {% endif %}
