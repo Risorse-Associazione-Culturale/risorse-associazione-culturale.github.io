@@ -1,0 +1,29 @@
+---
+layout: default
+---
+<div class="page">
+
+  <article class="page-content">
+    {{ content }}
+  </article>
+
+  {% assign past_events = site.eventi | where: 'stato', 'completato' | sort: 'calendario.inizio' | reverse %}
+    {% if len > 0 %}
+  <div class="row row-cols-1 row-cols-md-2 g-4">
+      {% for event in past_events %}
+
+    <div class="col">
+      <div class="card">
+        <div class="card-body">
+          <h6 class="card-title">{{ event.titolo }}</h5>
+          <h7 class="card-subtitle mb-2 text-muted">{{ event.luogo }}</h6>
+          <h7 class="card-subtitle mb-2 text-muted">{{ event.calendario.inizio | date_to_rfc822 | date: "%B %-d, %Y" }}</h6>
+          <p class="card-text">{{ event.abstract }}</p>
+          <a href="#" class="card-link">Dettagli...</a>
+        </div>
+      </div>
+    </div>
+
+      {% endfor %}
+  </div>
+    {% endif %}
