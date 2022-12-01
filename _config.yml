@@ -16,6 +16,8 @@ plugins:
   - jekyll-redirect-from
 
 collections:
+  citazioni:
+    output: false
   eventi:
     output: true
   relatori:

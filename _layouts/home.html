@@ -3,12 +3,15 @@ layout: default
 ---
 <div class="page">
 
-  <div class="bd-callout bd-callout-info">
-    {% include citazione.txt %}
-  </div>
   <article class="page-content">
     {{ content }}
   </article>
+
+  <div class="bd-callout bd-callout-info">
+    {% assign citazione = site.citazioni[0] %}
+    <div class="citation citation-text">{{ citazione.testo }}</div>
+    <div class="citation citation-author">--{{ citazione.autore }}</div>
+  </div>
 
   {% assign upcomingevents = site.eventi | where: 'stato', 'futuro' | sort: 'calendario.inizio' %}
   {% assign len = upcomingevents | size %}
