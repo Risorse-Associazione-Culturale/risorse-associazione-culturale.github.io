@@ -9,7 +9,7 @@ layout: default
 
   {% assign upcoming_events = site.conferenze | where: 'stato', 'futuro' | sort: 'calendario.inizio' %}
   <div class="row row-cols-1 row-cols-md-2 g-4">
-      {% for event in past_events %}
+      {% for event in upcoming_events %}
 
     <div class="col">
       <div class="card">
