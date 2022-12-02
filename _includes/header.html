@@ -13,8 +13,9 @@
         <li class="nav-item">
             <a class="nav-link" href="{{ "/" | prepend: site.baseurl }}">Home</a>
           </li>
-        {% for page in site.pages %}
-          {% if page.title and page.show_in_header %}
+        {% assign header_pages = site.pages | where: 'show_in_header', 'true' | sort: 'index' %}
+        {% for page in header_pages  %}
+          {% if page.title %}
           <li class="nav-item">
             <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           </li>

@@ -18,7 +18,7 @@ plugins:
 collections:
   citazioni:
     output: false
-  eventi:
+  conferenze:
     output: true
   relatori:
     output: true

@@ -17,7 +17,7 @@ layout: default
     <h2>Conferenze</h2>
     <h3>Il prossimo evento</h3>
 
-  {% assign upcomingevents = site.eventi | where: 'stato', 'futuro' | sort: 'calendario.inizio' %}
+  {% assign upcomingevents = site.conferenze | where: 'stato', 'futuro' | sort: 'calendario.inizio' %}
   {% assign len = upcomingevents | size %}
   {% if len > 0 %}
     {% assign first_upcoming_event = upcomingevents[0] %}
