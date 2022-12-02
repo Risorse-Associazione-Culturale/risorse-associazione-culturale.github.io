@@ -3,6 +3,7 @@ layout: default
 show_in_header: true
 title: "Chi siamo"
 permalink: /chi-siamo
+index: 2
 ---
 
 # Chi siamo
