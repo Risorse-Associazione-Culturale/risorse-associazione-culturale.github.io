@@ -1,17 +1,21 @@
 ---
 layout: default
 ---
-<div class="page">
+<div class="page home-page">
 
   <article class="page-content">
     {{ content }}
   </article>
 
-  <div class="bd-callout bd-callout-info">
+  <div class="bd-callout bd-callout-info citation">
     {% assign citazione = site.citazioni[0] %}
-    <div class="citation citation-text">{{ citazione.testo }}</div>
-    <div class="citation citation-author">--{{ citazione.autore }}</div>
+    <div class="citation-text">{{ citazione.testo }}</div>
+    <div class="citation-author">—{{ citazione.autore }}</div>
   </div>
+
+  <div class="events">
+    <h2>Conferenze</h2>
+    <h3>Il prossimo evento</h3>
 
   {% assign upcomingevents = site.eventi | where: 'stato', 'futuro' | sort: 'calendario.inizio' %}
   {% assign len = upcomingevents | size %}
@@ -19,7 +23,11 @@ layout: default
     {% assign first_upcoming_event = upcomingevents[0] %}
   
   <div class="card">
-    <!-- <img src="..." class="card-img-top" alt="..."> -->
+    {% if first_upcoming_event.url_immagine %}
+    <img src="{{ first_upcoming_event.url_immagine | prepend: site.baseurl }}" class="card-img-top" alt="Immagine dell'evento {{ first_upcoming_event.titolo }}">
+    {% else %}
+    <img src="{{ "/img/events/default-header.jpg" | prepend: site.baseurl }}" class="card-img-top" alt="Immagine dell'evento {{ first_upcoming_event.titolo }}">
+    {% endif %}
     <div class="card-body">
       <h5 class="card-title">{{ first_upcoming_event.titolo }}</h5>
       <h6 class="card-subtitle mb-2 text-muted">{{ first_upcoming_event.luogo }}</h6>
@@ -30,6 +38,7 @@ layout: default
   </div>
 
     {% if len > 1 %}
+    <h3>Altri eventi</h3>
   <div class="row row-cols-1 row-cols-md-2 g-4">
       {% for upcoming_event in upcomingevents limit: 4 offset: 1 %}
 
@@ -49,3 +58,5 @@ layout: default
   </div>
     {% endif %}
   {% endif %}
+
+  </div>
