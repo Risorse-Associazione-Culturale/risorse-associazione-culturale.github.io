@@ -20,6 +20,8 @@ lang: it
 collections:
   citazioni:
     output: false
+  cicli:
+    output: true
   conferenze:
     output: true
   relatori:
