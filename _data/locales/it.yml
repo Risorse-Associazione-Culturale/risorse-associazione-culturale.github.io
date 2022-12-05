@@ -1,0 +1,44 @@
+# Strings for dates
+# language Italian
+abbreviated_weekday:
+  - Dom
+  - Lun
+  - Mar
+  - Merc
+  - Gio
+  - Ven
+  - Sab
+full_weekday:
+  - Domenica
+  - Lunedì
+  - Martedì
+  - Mercoledì
+  - Giovedì
+  - Venerdì
+  - Sabato
+abbreviated_month:
+  - Gen
+  - Feb
+  - Mar
+  - Apr
+  - Mag
+  - Giu
+  - Lug
+  - Ago
+  - Set
+  - Ott
+  - Nov
+  - Dic
+full_month:
+  - Gennaio
+  - Febbraio
+  - Marzo
+  - Aprile
+  - Maggio
+  - Giugno
+  - Luglio
+  - Agosto
+  - Settembre
+  - Ottobre
+  - Novembre
+  - Dicembre

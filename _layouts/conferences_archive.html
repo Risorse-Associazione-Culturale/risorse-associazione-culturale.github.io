@@ -14,9 +14,9 @@ layout: default
     <div class="col">
       <div class="card">
         <div class="card-body">
-          <h6 class="card-title">{{ event.titolo }}</h5>
-          <h7 class="card-subtitle mb-2 text-muted">{{ event.luogo }}</h6>
-          <h7 class="card-subtitle mb-2 text-muted">{{ event.calendario.inizio | date_to_rfc822 | date: "%B %-d, %Y" }}</h6>
+          <h5 class="card-title">{{ event.titolo }}</h5>
+          <h6 class="card-subtitle mb-2 text-muted">{{ event.luogo }}</h6>
+          <h6 class="card-subtitle mb-2 text-muted">{% include translated_date.html date=event.calendario.inizio format="%-d %B, %Y" %}</h6>
           <p class="card-text">{{ event.abstract }}</p>
           <a href="#" class="card-link">Dettagli...</a>
         </div>
