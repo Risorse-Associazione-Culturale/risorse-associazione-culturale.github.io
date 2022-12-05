@@ -18,6 +18,15 @@ layout: default
           <h6 class="card-subtitle mb-2 text-muted">{{ event.luogo }}</h6>
           <h6 class="card-subtitle mb-2 text-muted">{% include translated_date.html date=event.calendario.inizio format="%-d %B, %Y" %}</h6>
           <p class="card-text">{{ event.abstract }}</p>
+
+          {% if event.ciclo %}
+            <p class="conference-meta ciclo">Ciclo:&nbsp;
+            {% assign matching_cicli = site.cicli | where: 'ciclo',event.ciclo %}
+            {% assign current_ciclo = matching_cicli[0] %}
+              <a href="{{ current_ciclo.url | prepend: site.baseurl }}"><nobr>{{ current_ciclo.ciclo }}</nobr></a>
+            </p>
+          {% endif %}
+
           <a href="#" class="card-link">Dettagli...</a>
         </div>
       </div>
