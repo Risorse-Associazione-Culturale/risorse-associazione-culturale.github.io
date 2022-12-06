@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<div class="ciclo">
+  <h1>{{ page.titolo }}</h1>
+  <p>Ciclo: {{ page.ciclo }}</p>
+  <ul>
+      {% assign conferences_in_cicle = site.conferenze | where: 'ciclo', page.ciclo %}
+        {% for conference in conferences_in_cicle %}
+        <li>
+          <a href="{{ conference.url | prepend: site.baseurl }}">{{ conference.titolo }}</a>
+        </li>
+      {% endfor %}
+  </ul>
+</div>
