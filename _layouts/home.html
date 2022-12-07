@@ -40,7 +40,7 @@ layout: default
               <a href="{{ current_ciclo.url | prepend: site.baseurl }}"><nobr>{{ current_ciclo.titolo }}</nobr></a>
             </p>
           {% endif %}
-      <a href="#" class="card-link">Dettagli...</a>
+      <a href="{{ event.url | prepend: site.baseurl }}" class="card-link">Dettagli...</a>
     </div>
   </div>
 
@@ -63,7 +63,7 @@ layout: default
               <a href="{{ current_ciclo.url | prepend: site.baseurl }}"><nobr>{{ current_ciclo.titolo }}</nobr></a>
             </p>
           {% endif %}
-          <a href="#" class="card-link">Dettagli...</a>
+          <a href="{{ event.url | prepend: site.baseurl }}" class="card-link">Dettagli...</a>
         </div>
       </div>
     </div>
