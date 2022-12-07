@@ -29,7 +29,7 @@ layout: default
             </p>
           {% endif %}
 
-          <a href="#" class="card-link">Dettagli...</a>
+          <a href="{{ event.url | prepend: site.baseurl }}" class="card-link">Dettagli...</a>
         </div>
       </div>
     </div>

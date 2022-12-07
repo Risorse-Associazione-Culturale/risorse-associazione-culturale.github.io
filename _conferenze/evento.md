@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: conference
 stato: 'futuro'
 ciclo: 2019-04
 titolo: "Evento di esempio"
