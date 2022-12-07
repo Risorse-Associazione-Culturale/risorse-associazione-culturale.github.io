@@ -1,7 +1,7 @@
 ---
 layout: default
 stato: 'completato'
-ciclo: 05-2018
+ciclo: 2018-05
 titolo: "Un evento passato"
 abstract: "Abstract dell'evento passato"
 luogo: "Sala non saprei, via Non me l'Hanno Detto, Treviglio"
