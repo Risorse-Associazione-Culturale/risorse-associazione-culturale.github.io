@@ -9,9 +9,9 @@ layout: default
 
   Visualizza tutti i <a href="{{ '/cicli' | prepend: site.baseurl }}">cicli</a>.
 
-  {% assign past_events = site.conferenze | where: 'stato', 'completato' | sort: 'calendario.inizio' | reverse %}
+  {% assign upcoming_events = site.eventi | where: 'stato', 'futuro' | sort: 'calendario.inizio' %}
   <div class="row row-cols-1 row-cols-md-2 g-4">
-      {% for event in past_events %}
+      {% for event in upcoming_events %}
 
     <div class="col">
       <div class="card">
@@ -20,6 +20,7 @@ layout: default
           <h6 class="card-subtitle mb-2 text-muted">{{ event.luogo }}</h6>
           <h6 class="card-subtitle mb-2 text-muted">{% include translated_date.html date=event.calendario.inizio format="%-d %B, %Y" %}</h6>
           <p class="card-text">{{ event.abstract }}</p>
+
           {% if event.ciclo %}
             <p class="conference-meta ciclo">Ciclo:&nbsp;
             {% assign matching_cicli = site.cicli | where: 'ciclo',event.ciclo %}
@@ -27,6 +28,7 @@ layout: default
               <a href="{{ current_ciclo.url | prepend: site.baseurl }}"><nobr>{{ current_ciclo.titolo }}</nobr></a>
             </p>
           {% endif %}
+
           <a href="{{ event.url | prepend: site.baseurl }}" class="card-link">Dettagli...</a>
         </div>
       </div>

@@ -1,5 +1,5 @@
 ---
-layout: conference
+layout: event
 stato: 'futuro'
 ciclo: 2020-02
 titolo: "Un altro evento di esempio"
