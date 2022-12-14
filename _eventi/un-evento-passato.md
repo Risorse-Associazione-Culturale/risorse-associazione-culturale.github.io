@@ -1,5 +1,5 @@
 ---
-layout: conference
+layout: event
 stato: 'completato'
 ciclo: 2018-05
 titolo: "Un evento passato"

@@ -22,7 +22,7 @@ collections:
     output: false
   cicli:
     output: true
-  conferenze:
+  eventi:
     output: true
   relatori:
     output: true
