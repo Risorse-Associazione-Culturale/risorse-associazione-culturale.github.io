@@ -6,4 +6,4 @@ permalink: /eventi
 index: 0
 ---
 
-# Prossime eventi
+# Prossimi eventi
