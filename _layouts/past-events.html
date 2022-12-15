@@ -7,8 +7,6 @@ layout: default
     {{ content }}
   </article>
 
-  Visualizza tutti i <a href="{{ '/cicli' | prepend: site.baseurl }}">cicli</a>.
-
   {% assign past_events = site.eventi | where: 'stato', 'completato' | sort: 'calendario.inizio' | reverse %}
   <div>
     <ul>
@@ -20,3 +18,7 @@ layout: default
       {% endfor %}
     </ul>
   </div>
+  
+  <div>Visualizza tutti i <a href="{{ '/cicli' | prepend: site.baseurl }}">cicli</a>.</div>
+
+</div>
