@@ -19,7 +19,9 @@ layout: default
           <h5 class="card-title">{{ event.titolo }}</h5>
           <h6 class="card-subtitle mb-2 text-muted">{{ event.luogo }}</h6>
           <h6 class="card-subtitle mb-2 text-muted">{% include translated_date.html date=event.calendario.inizio format="%-d %B, %Y" %}</h6>
+          {% if event.abstract %}
           <p class="card-text">{{ event.abstract }}</p>
+          {% endif %}
 
           {% if event.ciclo %}
             <p class="conference-meta ciclo">Ciclo:&nbsp;
