@@ -7,8 +7,6 @@ layout: default
     {{ content }}
   </article>
 
-  Visualizza tutti i <a href="{{ '/cicli' | prepend: site.baseurl }}">cicli</a>.
-
   {% assign upcoming_events = site.eventi | where: 'stato', 'futuro' | sort: 'calendario.inizio' %}
   <div class="row row-cols-1 row-cols-md-2 g-4">
       {% for event in upcoming_events %}
@@ -38,3 +36,7 @@ layout: default
 
       {% endfor %}
   </div>
+  
+  <div>Visualizza tutti i <a href="{{ '/cicli' | prepend: site.baseurl }}">cicli</a>.</div>
+  
+</div>
