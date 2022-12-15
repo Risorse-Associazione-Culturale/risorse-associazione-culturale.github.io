@@ -7,4 +7,11 @@ layout: default
     {% if page.abstract %}
     <div>{{ page.abstract }}</div>
     {% endif %}
+    {% if page.ciclo %}
+    <div>Ciclo:&nbsp;
+    {% assign matching_cicli = site.cicli | where: 'ciclo',page.ciclo %}
+    {% assign current_ciclo = matching_cicli[0] %}
+       <a href="{{ current_ciclo.url | prepend: site.baseurl }}"><nobr>{{ current_ciclo.titolo }}</nobr></a>
+    </div>
+    {% endif %}
 </div>
