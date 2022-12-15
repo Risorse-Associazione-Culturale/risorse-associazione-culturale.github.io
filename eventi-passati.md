@@ -6,4 +6,4 @@ permalink: /eventi/archivio
 index: 1
 ---
 
-Archivio eventi passate
+Archivio eventi passati
