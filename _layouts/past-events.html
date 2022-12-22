@@ -7,12 +7,12 @@ layout: default
     {{ content }}
   </article>
 
-  {% assign past_events = site.eventi | where: 'stato', 'completato' | sort: 'calendario.inizio' | reverse %}
+  {% assign past_events = site.eventi | where: 'stato', 'completato' | sort: 'calendario' | reverse %}
   <div>
     <ul>
       {% for event in past_events %}
       <li>
-        <span>{% include translated_date.html date=event.calendario.inizio format="%-d %B, %Y" %}</span> - 
+        <span>{% include translated_date.html date=event.calendario format="%-d %B, %Y" %}</span> - 
         <a href="{{ event.url | prepend: site.baseurl }}">{{ event.titolo }}</a>
       </li>
       {% endfor %}
