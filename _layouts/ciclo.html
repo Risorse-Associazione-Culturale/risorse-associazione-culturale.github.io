@@ -8,7 +8,7 @@ layout: default
       {% assign events_in_cicle = site.eventi | where: 'ciclo', page.ciclo %}
         {% for event in events_in_cicle %}
         <li>
-          <a href="{{ event.url | prepend: site.baseurl }}">{{ eventß.titolo }}</a>
+          <a href="{{ event.url | prepend: site.baseurl }}">{{ event.titolo }}</a>
         </li>
       {% endfor %}
   </ul>
