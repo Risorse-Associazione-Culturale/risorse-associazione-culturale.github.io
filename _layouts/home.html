@@ -49,7 +49,7 @@ layout: default
     {% if len > 1 %}
     <h3>Altri eventi</h3>
   <div class="row row-cols-1 row-cols-md-2 g-4">
-      {% for upcoming_event in upcomingevents limit: 4 offset: 1 %}
+      {% for upcoming_event in upcomingevents offset: 1 %}
 
     <div class="col">
       <div class="card">
