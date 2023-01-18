@@ -1,83 +1,28 @@
-// Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  
-	
+.container {
+    max-width: 1140px;
 }
 
-.border-none{
-	border-width: 0 !important;
+.text-container {
+    max-width: 750px;
 }
 
-.transparent{
-	background-color: transparent !important;
+.header {
+    color: #fff;
+    padding: 20px 0;
+    background: #4182e4;
+    background: linear-gradient(to bottom, #4182e4 0%, #4182e4 100%) no-repeat #4182e4;
 }
 
-.inherit-color{
-	color: inherit !important;
+.citation {
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(to bottom, #4182e4 0%, #4182e4 100%) no-repeat #a05fb7;
+    padding-top: 50px;
 }
 
-.home{
-	.site-description{
-		text-align: justify;
-		text-justify: newspaper;
-	}
-
-	.upcoming-event{
-		background-color: #f5f5f5;
-		
-		.upcoming-event-details{
-			padding-left: .5rem
-		}
-	}
-}
-
-.site-footer{
-	padding-top: 10px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	
-	border-top-style: solid;
-	border-top-width: 1px;
-	border-top-color: $grey-color-dark;
-	
-	ul.links-list{
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-	}
-	
-	ul.right-links-list{
-		text-align: right;
-	}
-	
-	ul.left-links-list{
-
-	}
-	
-	.footer-heading{
-        	color: $grey-color-light;
-	}
-	
-	.wrapper{
-    		.text{
-      			color: $grey-color-light;
-      			font-style: italic;
-    		}
-	}
-}
-
-
-
-.page{
-	
-	.page-content{}
-
-	.page-footer{
-		.page-meta{
-			font-size: $small-font-size;
-			color: $grey-color;
-		}
-	}
+.hero {
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(to bottom, #4182e4 0%, #4182e4 100%) no-repeat #a05fb7;
+    padding-top: 50px;
 }
