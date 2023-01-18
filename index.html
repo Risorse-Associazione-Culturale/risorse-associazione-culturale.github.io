@@ -4,8 +4,12 @@ layout: default
 <div>
 
   <section class="hero">
-    {{ content }}
-  </section>
+    <div class="text-container">
+        <h1 class="title">Associazione <strong>RISORSE</strong></h1>
+        <p class="subtitle">Associazione culturale per capire meglio l'economia</p>
+        <p>L'associazione RISORSE ha lo scopo di diffondere e valorizzare la conoscenza, la riflessione e lo studio della cultura economica, anche ponendosi in relazione confronto con altre tipologie del sapere, nonché con i molteplici aspetti dell'essere umano e delle sue storiche espressioni, con particolare riferimento alla realtà locale.</p>
+    </div>  
+</section>
 
   <section class="hero">
   {% assign upcomingevents = site.eventi | where: 'stato', 'futuro' | sort: 'calendario' %}
@@ -37,10 +41,12 @@ layout: default
     </div>
   </section>
 
-  <section class="citation">
-    {% assign citazione = site.citazioni[0] %}
-    <div class="citation-text">{{ citazione.testo }}</div>
-    <div class="citation-author">—{{ citazione.autore }}</div>
+  <section class="hero">
+    <div class="text-container">
+        {% assign citazione = site.citazioni[0] %}
+        <p class="citation-text">{{ citazione.testo }}</p>
+        <p class="citation-author">—{{ citazione.autore }}</p>
+    </div>
   </section>
 
   <div class="events">

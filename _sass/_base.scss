@@ -7,10 +7,43 @@
     line-height: $base-line-height;
     padding: 0;
     margin: 0;
-    font-weight: 300;
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+}
+
+.nav{
+    .nav-item{
+        .nav-link{
+            margin: 0 3px;
+            padding: 20px 10px;
+            color: rgba(255, 255, 255, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0);
+        }
+
+        .nav-link:hover{
+            border-bottom: 1px solid rgba(255, 255, 255, 255);  
+        }
+    }
+}
+
+p {
+    //font-size: 1.38em;
+    color: #666;
+    margin-bottom: 20px;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+
+h1.title {
+    font-weight: 300;
+    font-size: 2.3em;
+    margin: 0;
+}
+
+p.subtitle{
+    margin-top: 10px;
+    text-align: center;
 }
 
 .icon {
