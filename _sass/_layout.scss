@@ -40,10 +40,16 @@ section{
     }
 }
 
-.testimonial {
+.quote {
     background: #f5f5f5;
     margin: 0;
     padding: 100px 0;
+
+    .quote-block {
+        max-width: 750px;
+        width: 98%;
+        margin: 0 auto;
+    }
 
     blockquote {
         padding: 18px 25px;
@@ -75,24 +81,20 @@ section{
 }
 
 @media (min-width: 450px){
-    .testimonial .testimonial-block {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flexbox;
-        display: flex;
+    .quote{
+        .quote-block {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+        }
     }
 
     blockquote {
         -webkit-flex: 1;
         flex: 1;
     }
-}
-
-.testimonial .testimonial-block {
-    max-width: 750px;
-    width: 98%;
-    margin: 0 auto;
 }
 
 .page{

@@ -7,11 +7,10 @@ layout: default
     <div class="text-container associazione-block">
         <h1 class="title">Associazione <strong>RISORSE</strong></h1>
         <p class="subtitle">Associazione culturale per capire meglio l'economia</p>
-        <p class="description">L'associazione RISORSE ha lo scopo di diffondere e valorizzare la conoscenza, la riflessione e lo studio della cultura economica, anche ponendosi in relazione confronto con altre tipologie del sapere, nonché con i molteplici aspetti dell'essere umano e delle sue storiche espressioni, con particolare riferimento alla realtà locale.</p>
     </div>  
   </section>
 
-  <section class="hero">
+  <section class="hero main-event">
   {% assign upcomingevents = site.eventi | where: 'stato', 'futuro' | sort: 'calendario' %}
   {% assign len = upcomingevents | size %}
   {% if len > 0 %}
@@ -41,20 +40,15 @@ layout: default
     </div>
   </section>
 
-  <section class="testimonial">
+  <section class="purpose">
 		<div class="container flex">
-			<div class="testimonial-block">
+			<div class="purpose-block">
 				<blockquote>
-					{% assign citazione = site.citazioni[0] %}
-          <p class="text">{{ citazione.testo }}</p>
-          <p class="author">—{{ citazione.autore }}</p>
+					<p class="description">L'associazione RISORSE ha lo scopo di diffondere e valorizzare la conoscenza, la riflessione e lo studio della cultura economica, anche ponendosi in relazione confronto con altre tipologie del sapere, nonché con i molteplici aspetti dell'essere umano e delle sue storiche espressioni, con particolare riferimento alla realtà locale.</p>
 				</blockquote>
 			</div>
 		</div>
 	</section>
-
-
-
 
   <div class="events">
     <h2>eventi</h2>
@@ -62,7 +56,7 @@ layout: default
 
     {% if len > 1 %}
     <h3>Altri eventi</h3>
-  <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="row row-cols-1 row-cols-md-2 g-4">
       {% for upcoming_event in upcomingevents offset: 1 %}
 
     <div class="col">
@@ -87,8 +81,21 @@ layout: default
     </div>
 
       {% endfor %}
-  </div>
+      </div>
     {% endif %}
   {% endif %}
-
   </div>
+
+  <section class="quote">
+		<div class="container flex">
+			<div class="quote-block">
+				<blockquote>
+					{% assign citazione = site.citazioni[0] %}
+          <p class="text">{{ citazione.testo }}</p>
+          <p class="author">—{{ citazione.autore }}</p>
+				</blockquote>
+			</div>
+		</div>
+	</section>
+
+ </div>
