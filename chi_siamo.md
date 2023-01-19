@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 show_in_header: true
 title: "Chi siamo"
 permalink: /chi-siamo

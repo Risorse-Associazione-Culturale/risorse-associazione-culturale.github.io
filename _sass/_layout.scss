@@ -1,83 +1,107 @@
-// Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap
-
-// Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  
-	
+section{
+    padding: 100px 0px;
 }
 
-.border-none{
-	border-width: 0 !important;
+.container, .text-container {
+    margin: 0 auto;
+    position: relative;
+    padding: 0 20px;
 }
 
-.transparent{
-	background-color: transparent !important;
+.container {
+    position: relative;
+    max-width: 950px;
 }
 
-.inherit-color{
-	color: inherit !important;
+.text-container {
+    max-width: 750px;
 }
 
-.home{
-	.site-description{
-		text-align: justify;
-		text-justify: newspaper;
-	}
-
-	.upcoming-event{
-		background-color: #f5f5f5;
-		
-		.upcoming-event-details{
-			padding-left: .5rem
-		}
-	}
+.logo{
+    float: left;
+    margin-top: 15px;
 }
 
-.site-footer{
-	padding-top: 10px;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	
-	border-top-style: solid;
-	border-top-width: 1px;
-	border-top-color: $grey-color-dark;
-	
-	ul.links-list{
-		margin: 0;
-		padding: 0;
-		list-style-type: none;
-	}
-	
-	ul.right-links-list{
-		text-align: right;
-	}
-	
-	ul.left-links-list{
-
-	}
-	
-	.footer-heading{
-        	color: $grey-color-light;
-	}
-	
-	.wrapper{
-    		.text{
-      			color: $grey-color-light;
-      			font-style: italic;
-    		}
-	}
+.header {
+    color: #fff;
+    padding: 20px 0;
+    background: #4182e4;
+    background: linear-gradient(to bottom, #4182e4 0%, #4182e4 100%) no-repeat #4182e4;
 }
 
+.hero {
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(to bottom, #4182e4 0%, #4182e4 100%) no-repeat #a05fb7;
+    padding-top: 50px;
 
+    p{
+        color: #ffffff;
+    }
+}
+
+.testimonial {
+    background: #f5f5f5;
+    margin: 0;
+    padding: 100px 0;
+
+    blockquote {
+        padding: 18px 25px;
+        margin: 0;
+        quotes: "“" "”" "‘" "’";
+        font-style: italic;
+
+        .author {
+            display: block;
+            font-weight: bold;
+            margin: 10px 0 0 0;
+            font-size: $small-font-size;
+            font-style: normal;
+        }
+    }
+
+    blockquote:before {
+        color: #ccc;
+        content: open-quote;
+        font-size: 4em;
+        line-height: 0.1em;
+        margin-right: 0.25em;
+        vertical-align: -0.4em;
+    }
+
+    p{
+        display: inline;
+    }
+}
+
+@media (min-width: 450px){
+    .testimonial .testimonial-block {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    blockquote {
+        -webkit-flex: 1;
+        flex: 1;
+    }
+}
+
+.testimonial .testimonial-block {
+    max-width: 750px;
+    width: 98%;
+    margin: 0 auto;
+}
 
 .page{
-	
-	.page-content{}
+    margin-top: 20px;
+}
 
-	.page-footer{
-		.page-meta{
-			font-size: $small-font-size;
-			color: $grey-color;
-		}
-	}
+footer {
+    padding: 50px 0 50px 0;
+    position: relative;
+    background: #2b2b40;
+    color: #fff;
 }
