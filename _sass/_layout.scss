@@ -97,13 +97,34 @@ section{
     }
 }
 
+.square-image {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 0px auto 0 auto;
+    position: relative;
+    border-radius: 200px;
+
+    img {
+        position: absolute;
+        left: -1000%;
+        right: -1000%;
+        top: -980%;
+        bottom: -1000%;
+        margin: auto;
+        width: 150px;
+    }
+}
+
 .page{
     margin-top: 20px;
 }
 
 footer {
+    p{
+        color: rgb(191, 191, 191);
+    }
     padding: 50px 0 50px 0;
     position: relative;
     background: #2b2b40;
-    color: #fff;
 }

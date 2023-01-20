@@ -89,8 +89,14 @@ layout: default
   <section class="quote">
 		<div class="container flex">
 			<div class="quote-block">
+        {% assign citazione = site.citazioni[0] %}
+        {% if citazione.immagine %}
+        <div class="square-image">
+          <img src="{{ citazione.immagine }}"
+               alt="{{ citazione.autore }}">
+        </div>
+        {% endif %}
 				<blockquote>
-					{% assign citazione = site.citazioni[0] %}
           <p class="text">{{ citazione.testo }}</p>
           <p class="author">—{{ citazione.autore }}</p>
 				</blockquote>
