@@ -1,4 +1,8 @@
+# Jekyll build artifacts
 _site
 .sass-cache
 .jekyll-metadata
 .jekyll-cache
+
+# macOS garbage
+.DS_Store
