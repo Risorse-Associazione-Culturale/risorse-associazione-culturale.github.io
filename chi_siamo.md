@@ -3,7 +3,7 @@ layout: page
 show_in_header: true
 title: "Chi siamo"
 permalink: /chi-siamo
-index: 2
+index: 0
 ---
 
 # Chi siamo
