@@ -17,26 +17,24 @@ layout: default
   <section class="hero main-event">
     {% assign first_upcoming_event = upcomingevents[0] %}
     <div class="text-container">
-      {% if first_upcoming_event.url_immagine %}
-      <img src="{{ first_upcoming_event.url_immagine | prepend: site.baseurl }}" class="card-img-top" alt="Immagine dell'evento {{ first_upcoming_event.titolo }}">
-      {% else %}
-      <img src="{{ "/img/events/default-header.jpg" | prepend: site.baseurl }}" class="card-img-top" alt="Immagine dell'evento {{ first_upcoming_event.titolo }}">
-      {% endif %}
+
+      {% include event_image.html image_url=first_upcoming_event.url_immagine imageAlt=first_upcoming_event.titolo %}
       <div>
-        <h5>{{ first_upcoming_event.titolo }}</h5>
-        <h6 class="text-muted">{{ first_upcoming_event.luogo }}</h6>
-        <h6 class="text-muted">{% include translated_date.html date=first_upcoming_event.calendario format="%-d %B, %Y" %}</h6>
+        <h3>
+          <a href="{{ first_upcoming_event.url | prepend: site.baseurl }}" class="muted-link">{{ first_upcoming_event.titolo }}</a>
+        </h3>
+        <p>{% include translated_date.html date=first_upcoming_event.calendario format="%-d %B, %Y" %}</p>
+        <p>{{ first_upcoming_event.luogo }}</p>
         {% if first_upcoming_event.abstract %}
         <p>{{ first_upcoming_event.abstract }}</p>
         {% endif %}
-        {% if first_upcoming_event.ciclo %}
+        <!-- {% if first_upcoming_event.ciclo %}
           <p class="conference-meta ciclo">Ciclo:&nbsp;
           {% assign matching_cicli = site.cicli | where: 'ciclo',first_upcoming_event.ciclo %}
           {% assign current_ciclo = matching_cicli[0] %}
             <a href="{{ current_ciclo.url | prepend: site.baseurl }}"><nobr>{{ current_ciclo.titolo }}</nobr></a>
           </p>
-        {% endif %}
-        <a href="{{ first_upcoming_event.url | prepend: site.baseurl }}">Dettagli...</a>
+        {% endif %} -->
       </div>
     </div>
   </section>
@@ -57,28 +55,20 @@ layout: default
 
     {% for upcoming_event in upcomingevents offset: 1 %}
     {% assign mod = forloop.index | modulo: 2 %}
-    <div class="row container">
+    <div class="row container event">
       {% if mod == 0 %}
       <div class="col-md-6">
-        {{ upcoming_event.titolo }}
+        {% include event_details.html event=upcoming_event %}
       </div>
       <div class="col-md-6">
-        {% if upcoming_event.url_immagine %}
-        <img src="{{ upcoming_event.url_immagine | prepend: site.baseurl }}" class="card-img-top" alt="Immagine dell'evento {{ upcoming_event.titolo }}">
-        {% else %}
-        <img src="{{ "/img/events/default-header.jpg" | prepend: site.baseurl }}" class="card-img-top" alt="Immagine dell'evento {{ upcoming_event.titolo }}">
-        {% endif %}
+        {% include event_image.html image_url=upcoming_event.url_immagine imageAlt=upcoming_event.titolo %}
       </div>
       {% else %}
       <div class="col-md-6">
-        {% if upcoming_event.url_immagine %}
-        <img src="{{ upcoming_event.url_immagine | prepend: site.baseurl }}" class="card-img-top" alt="Immagine dell'evento {{ upcoming_event.titolo }}">
-        {% else %}
-        <img src="{{ "/img/events/default-header.jpg" | prepend: site.baseurl }}" class="card-img-top" alt="Immagine dell'evento {{ upcoming_event.titolo }}">
-        {% endif %}
+        {% include event_image.html image_url=upcoming_event.url_immagine imageAlt=upcoming_event.titolo %}
       </div>
       <div class="col-md-6">
-        {{ upcoming_event.titolo }}
+        {% include event_details.html event=upcoming_event %}
       </div>
       {% endif %}
     </div>

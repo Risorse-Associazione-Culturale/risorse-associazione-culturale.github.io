@@ -19,7 +19,7 @@ section{
 
 .logo{
     float: left;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .header {
@@ -113,6 +113,30 @@ section{
         bottom: -1000%;
         margin: auto;
         width: 150px;
+    }
+}
+
+section{
+    .event{
+        padding-top: 50px;
+    }
+}
+
+.event-image{
+    width: 100%;
+}
+
+.purpose{
+    background-color: #f5f5f5;
+}
+
+.events{
+    padding-top: 50px;
+}
+
+.main-event{
+    h3{
+        margin-top: 25px;
     }
 }
 

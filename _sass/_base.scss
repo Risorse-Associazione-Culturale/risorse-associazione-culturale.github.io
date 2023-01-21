@@ -71,7 +71,7 @@ hr.h-splitter{
 a.muted-link{
     
     text-decoration: none;
-    color: $text-color;
+    color: inherit;
     
     &:hover{
         text-decoration: underline;
