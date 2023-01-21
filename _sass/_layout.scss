@@ -19,7 +19,7 @@ section{
 
 .logo{
     float: left;
-    margin-top: 15px;
+    margin-top: 10px;
 }
 
 .header {
@@ -40,10 +40,16 @@ section{
     }
 }
 
-.testimonial {
+.quote {
     background: #f5f5f5;
     margin: 0;
     padding: 100px 0;
+
+    .quote-block {
+        max-width: 750px;
+        width: 98%;
+        margin: 0 auto;
+    }
 
     blockquote {
         padding: 18px 25px;
@@ -75,12 +81,14 @@ section{
 }
 
 @media (min-width: 450px){
-    .testimonial .testimonial-block {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flexbox;
-        display: flex;
+    .quote{
+        .quote-block {
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flexbox;
+            display: flex;
+        }
     }
 
     blockquote {
@@ -89,10 +97,47 @@ section{
     }
 }
 
-.testimonial .testimonial-block {
-    max-width: 750px;
-    width: 98%;
-    margin: 0 auto;
+.square-image {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin: 0px auto 0 auto;
+    position: relative;
+    border-radius: 200px;
+
+    img {
+        position: absolute;
+        left: -1000%;
+        right: -1000%;
+        top: -980%;
+        bottom: -1000%;
+        margin: auto;
+        width: 150px;
+    }
+}
+
+section{
+    .event{
+        padding-top: 50px;
+    }
+}
+
+.event-image{
+    width: 100%;
+}
+
+.purpose{
+    background-color: #f5f5f5;
+}
+
+.events{
+    padding-top: 50px;
+}
+
+.main-event{
+    h3{
+        margin-top: 25px;
+    }
 }
 
 .page{
@@ -100,8 +145,10 @@ section{
 }
 
 footer {
+    p{
+        color: rgb(191, 191, 191);
+    }
     padding: 50px 0 50px 0;
     position: relative;
     background: #2b2b40;
-    color: #fff;
 }

@@ -1,0 +1,9 @@
+{% if include.image_url %}
+<img src="{{ include.image_url | prepend: site.baseurl }}" 
+    class="event-image"
+    alt="Immagine dell'evento {{ include.imageAlt }}">
+{% else %}
+<img src="{{ "/img/events/default-header.jpg" | prepend: site.baseurl }}"
+    class="event-image"
+    alt="Immagine dell'evento {{ include.imageAlt }}">
+{% endif %}
