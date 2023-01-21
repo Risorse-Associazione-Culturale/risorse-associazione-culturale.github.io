@@ -54,14 +54,36 @@ layout: default
 
   {% if len > 1 %}
   <section class="events">
+
     {% for upcoming_event in upcomingevents offset: 1 %}
     {% assign mod = forloop.index | modulo: 2 %}
-    {% if mod == 0 %}
-      <div>even</div>
-    {% else %}
-      <div>odd</div>
-    {% endif %}
+    <div class="row container">
+      {% if mod == 0 %}
+      <div class="col-md-6">
+        {{ upcoming_event.titolo }}
+      </div>
+      <div class="col-md-6">
+        {% if upcoming_event.url_immagine %}
+        <img src="{{ upcoming_event.url_immagine | prepend: site.baseurl }}" class="card-img-top" alt="Immagine dell'evento {{ upcoming_event.titolo }}">
+        {% else %}
+        <img src="{{ "/img/events/default-header.jpg" | prepend: site.baseurl }}" class="card-img-top" alt="Immagine dell'evento {{ upcoming_event.titolo }}">
+        {% endif %}
+      </div>
+      {% else %}
+      <div class="col-md-6">
+        {% if upcoming_event.url_immagine %}
+        <img src="{{ upcoming_event.url_immagine | prepend: site.baseurl }}" class="card-img-top" alt="Immagine dell'evento {{ upcoming_event.titolo }}">
+        {% else %}
+        <img src="{{ "/img/events/default-header.jpg" | prepend: site.baseurl }}" class="card-img-top" alt="Immagine dell'evento {{ upcoming_event.titolo }}">
+        {% endif %}
+      </div>
+      <div class="col-md-6">
+        {{ upcoming_event.titolo }}
+      </div>
+      {% endif %}
+    </div>
     {% endfor %}
+
   </section>
   {% endif %}
 
