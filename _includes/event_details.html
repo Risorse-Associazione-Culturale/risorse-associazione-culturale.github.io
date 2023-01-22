@@ -1,8 +1,13 @@
-<p>{% include translated_date.html date=include.event.calendario format="%-d %B, %Y" %}</p>
+<p class="metadata">
+    <span>{% include translated_date.html date=include.event.data_evento format="%-d %B, %Y" %}</span>
+    {% if include.event.ora_evento %}
+    <span>, {{ include.event.ora_evento }}</span>
+    {% endif %}
+</p>
 <h4>
     <a href="{{ include.event.url | prepend: site.baseurl }}" class="muted-link">{{ include.event.titolo }}</a>
 </h4>
-<p>{{ include.event.luogo }}</p>
+<p class="metadata">{{ include.event.luogo }}</p>
 {% if include.event.abstract %}
 <p>{{ include.event.abstract }}</p>
 {% endif %}

@@ -10,7 +10,7 @@ layout: default
     </div>  
   </section>
 
-  {% assign upcomingevents = site.eventi | where: 'stato', 'futuro' | sort: 'calendario' %}
+  {% assign upcomingevents = site.eventi | where: 'stato', 'futuro' | sort: 'data_evento' %}
   {% assign len = upcomingevents | size %}
 
   {% if len > 0 %}
@@ -23,8 +23,13 @@ layout: default
         <h3>
           <a href="{{ first_upcoming_event.url | prepend: site.baseurl }}" class="muted-link">{{ first_upcoming_event.titolo }}</a>
         </h3>
-        <p>{% include translated_date.html date=first_upcoming_event.calendario format="%-d %B, %Y" %}</p>
-        <p>{{ first_upcoming_event.luogo }}</p>
+        <p class="metadata">
+          <span>{% include translated_date.html date=first_upcoming_event.data_evento format="%-d %B, %Y" %}</span>
+          {% if first_upcoming_event.ora_evento %}
+          <span>, {{ first_upcoming_event.ora_evento }}</span>
+          {% endif %}
+        </p>
+        <p class="metadata">{{ first_upcoming_event.luogo }}</p>
         {% if first_upcoming_event.abstract %}
         <p>{{ first_upcoming_event.abstract }}</p>
         {% endif %}
