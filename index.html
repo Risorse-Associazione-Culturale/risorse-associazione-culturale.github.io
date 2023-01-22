@@ -78,7 +78,7 @@ layout: default
   <section class="quote">
 		<div class="container flex">
 			<div class="quote-block">
-        {% assign citazione = site.citazioni[0] %}
+        {% assign citazione = site.citazioni | sample %}
         {% if citazione.immagine %}
         <div class="square-image">
           <img src="{{ citazione.immagine }}"
