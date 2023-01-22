@@ -1,7 +1,11 @@
 <p class="metadata">
+    {% if include.event.luogo %}
     {{ include.event.luogo }}
-    {% if include.event.is_conference_call %}
+    {% endif %}
+    {% if include.event.is_conference_call and include.event.luogo %}
     <br />
+    {% endif %}
+    {% if include.event.is_conference_call %}
     L'evento è online: 
         {% if include.event.conference_call_link %}
         <a href="{{ include.event.conference_call_link }}" target="_blank">{{ include.event.conference_call_link }}</a> 
