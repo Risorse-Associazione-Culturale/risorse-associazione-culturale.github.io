@@ -18,18 +18,18 @@ layout: default
     {% assign first_upcoming_event = upcomingevents[0] %}
     <div class="text-container">
 
-      {% include event_image.html image_url=first_upcoming_event.url_immagine imageAlt=first_upcoming_event.titolo %}
+      {% include event_image.html 
+                 image_url=first_upcoming_event.url_immagine
+                 image_alt=first_upcoming_event.titolo
+      %}
       <div>
         <h3>
           <a href="{{ first_upcoming_event.url | prepend: site.baseurl }}" class="muted-link">{{ first_upcoming_event.titolo }}</a>
         </h3>
-        <p class="metadata">
-          <span>{% include translated_date.html date=first_upcoming_event.data_evento format="%-d %B, %Y" %}</span>
-          {% if first_upcoming_event.ora_evento %}
-          <span>, {{ first_upcoming_event.ora_evento }}</span>
-          {% endif %}
-        </p>
-        <p class="metadata">{{ first_upcoming_event.luogo }}</p>
+        {% include event_date_time.html
+                   date=first_upcoming_event.data_evento
+                   time=first_upcoming_event.ora_evento %}
+        {% include event_location.html event=first_upcoming_event %}
         {% if first_upcoming_event.abstract %}
         <p>{{ first_upcoming_event.abstract }}</p>
         {% endif %}
@@ -66,11 +66,11 @@ layout: default
         {% include event_details.html event=upcoming_event %}
       </div>
       <div class="col-md-6">
-        {% include event_image.html image_url=upcoming_event.url_immagine imageAlt=upcoming_event.titolo %}
+        {% include event_image.html image_url=upcoming_event.url_immagine image_alt=upcoming_event.titolo %}
       </div>
       {% else %}
       <div class="col-md-6">
-        {% include event_image.html image_url=upcoming_event.url_immagine imageAlt=upcoming_event.titolo %}
+        {% include event_image.html image_url=upcoming_event.url_immagine image_alt=upcoming_event.titolo %}
       </div>
       <div class="col-md-6">
         {% include event_details.html event=upcoming_event %}
