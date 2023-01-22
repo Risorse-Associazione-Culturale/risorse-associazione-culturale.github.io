@@ -3,7 +3,12 @@
     class="event-image"
     alt="Immagine dell'evento {{ include.image_alt }}">
 {% else %}
-<img src="{{ "/img/events/default-header.jpg" | prepend: site.baseurl }}"
+{% assign default_image_indexes = "0|1|2|3|4" | split: "|" %}
+{% assign default_image_index = default_image_indexes | sample %}
+{% assign default_image = "/img/events/default-header-" 
+                        | append: default_image_index 
+                        | append: ".jpg" %}
+<img src="{{ default_image | prepend: site.baseurl }}"
     class="event-image"
     alt="Immagine dell'evento {{ include.image_alt }}">
 {% endif %}
