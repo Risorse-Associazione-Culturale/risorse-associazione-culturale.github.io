@@ -33,13 +33,6 @@ layout: default
         {% if first_upcoming_event.abstract %}
         <p>{{ first_upcoming_event.abstract }}</p>
         {% endif %}
-        <!-- {% if first_upcoming_event.ciclo %}
-          <p class="conference-meta ciclo">Ciclo:&nbsp;
-          {% assign matching_cicli = site.cicli | where: 'ciclo',first_upcoming_event.ciclo %}
-          {% assign current_ciclo = matching_cicli[0] %}
-            <a href="{{ current_ciclo.url | prepend: site.baseurl }}"><nobr>{{ current_ciclo.titolo }}</nobr></a>
-          </p>
-        {% endif %} -->
       </div>
     </div>
   </section>
