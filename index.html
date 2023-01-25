@@ -3,6 +3,10 @@ layout: default
 ---
 <div>
 
+  {% assign upcoming_events = site.eventi | where: 'stato', 'futuro' | sort: 'data_evento' %}
+  {% assign len = upcoming_events | size %}
+  {% assign past_events = site.eventi | where: 'stato', 'completato' | sort: 'data_evento' |  %}
+
   <section class="hero">
     <div class="text-container associazione-block">
         <h1 class="title">Associazione <strong>RISORSE</strong></h1>
@@ -10,12 +14,9 @@ layout: default
     </div>  
   </section>
 
-  {% assign upcomingevents = site.eventi | where: 'stato', 'futuro' | sort: 'data_evento' %}
-  {% assign len = upcomingevents | size %}
-
   {% if len > 0 %}
   <section class="hero main-event">
-    {% assign first_upcoming_event = upcomingevents[0] %}
+    {% assign first_upcoming_event = upcoming_events[0] %}
     <div class="text-container">
 
       {% include event_image.html 
@@ -39,21 +40,37 @@ layout: default
   {% endif %}
 
   <section class="purpose">
-		<div class="container flex">
-			<div class="purpose-block">
+		<div class="container flex row">
+			<div class="purpose-block col-md-7">
 				<blockquote>
 					<p class="description">L'associazione RISORSE ha lo scopo di diffondere e valorizzare la conoscenza, la riflessione e lo studio della cultura economica, anche ponendosi in relazione confronto con altre tipologie del sapere, nonché con i molteplici aspetti dell'essere umano e delle sue storiche espressioni, con particolare riferimento alla realtà locale.</p>
 				</blockquote>
 			</div>
+			<div class="col-md-5 recent-events">
+        <h5>Eventi recenti</h5>
+        <ul>
+          {% for past_event in past_events limit:3 %}
+          <li class="recent-event">
+            <a href="{{ past_event.url | prepend: site.baseurl }}">
+              <p class="metadata">{% include translated_date.html date=past_event.data_evento format="%-d %B, %Y" %}</p>
+              <p>{{ past_event.titolo }}</p>
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
 		</div>
 	</section>
 
   {% if len > 1 %}
   <section class="events">
-
-    {% for upcoming_event in upcomingevents offset: 1 %}
+    <div class="text-container">
+      <h3>Prossimamente...</h3>
+    </div>
+    <div class="container">
+    {% for upcoming_event in upcoming_events offset: 1 %}
     {% assign mod = forloop.index | modulo: 2 %}
-    <div class="row container event">
+    <div class="row event">
       {% if mod == 0 %}
       <div class="col-md-6">
         {% include event_details.html event=upcoming_event %}
@@ -71,7 +88,7 @@ layout: default
       {% endif %}
     </div>
     {% endfor %}
-
+  </div>
   </section>
   {% endif %}
 
