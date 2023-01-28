@@ -132,7 +132,14 @@ p.metadata{
     }
 
     .recent-events{
-        border-left: rgb(191, 191, 191) 1px solid;
+
+        @media screen and (max-width: 767px) {
+            border-left: none;
+          }
+        
+        @media screen and (min-width: 768px) {
+            border-left: rgb(191, 191, 191) 1px solid;
+          }
 
         h5{
             color:rgb(75, 75, 75);
