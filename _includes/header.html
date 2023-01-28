@@ -1,23 +1,34 @@
 <header class="header">
 
-  <div class="container">
-    <div class="logo">
-      <a href="/">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand">
         <img src="{{ "/img/logo.png" | prepend: site.baseurl }}"
              alt="Risorse - Associazione Culturale - ODV - ETS" 
              height="50px" />
       </a>
+      <button class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarToggler"
+              aria-controls="navbarToggler"
+              aria-expanded="false"
+              aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
+        <ul class="navbar-nav">
+          {% assign header_pages = site.pages | where: 'show_in_header', 'true' | sort: 'index' %}
+            {% for page in header_pages  %}
+            {% if page.title %}
+          <li class="nav-item">
+            <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </div>
     </div>
-    <ul class="nav justify-content-end">
-    {% assign header_pages = site.pages | where: 'show_in_header', 'true' | sort: 'index' %}
-    {% for page in header_pages  %}
-      {% if page.title %}
-      <li class="nav-item">
-         <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
-      </li>
-      {% endif %}
-    {% endfor %}
-    </ul>
-  </div>
+  </nav>
 
 </header>
