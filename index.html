@@ -5,7 +5,7 @@ layout: default
 
   {% assign upcoming_events = site.eventi | where: 'stato', 'futuro' | sort: 'data_evento' %}
   {% assign len = upcoming_events | size %}
-  {% assign past_events = site.eventi | where: 'stato', 'completato' | sort: 'data_evento' |  %}
+  {% assign recent_events = site.eventi | where: 'stato', 'completato' | sort: 'data_evento' |  %}
 
   <section class="hero">
     <div class="text-container associazione-block">
@@ -49,11 +49,11 @@ layout: default
 			<div class="col-md-5 recent-events">
         <h5>Eventi recenti</h5>
         <ul>
-          {% for past_event in past_events limit:3 %}
+          {% for recent_event in recent_events limit:3 %}
           <li class="recent-event">
-            <a href="{{ past_event.url | prepend: site.baseurl }}">
-              <p class="metadata">{% include translated_date.html date=past_event.data_evento format="%-d %B, %Y" %}</p>
-              <p>{{ past_event.titolo }}</p>
+            <a href="{{ recent_event.url | prepend: site.baseurl }}">
+              <p class="metadata">{% include translated_date.html date=recent_event.data_evento format="%-d %B, %Y" %}</p>
+              <p>{{ recent_event.titolo }}</p>
             </a>
           </li>
           {% endfor %}
