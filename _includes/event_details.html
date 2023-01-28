@@ -2,6 +2,7 @@
 <h4>
     <a href="{{ include.event.url | prepend: site.baseurl }}" class="muted-link">{{ include.event.titolo }}</a>
 </h4>
+{% include event_speakers.html speakers=include.event.relatori %}
 {% include event_location.html event=include.event %}
 {% if include.event.abstract %}
 <p>{{ include.event.abstract }}</p>
