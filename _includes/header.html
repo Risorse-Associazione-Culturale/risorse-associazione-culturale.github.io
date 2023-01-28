@@ -18,11 +18,12 @@
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarToggler">
         <ul class="navbar-nav">
+          {% assign currentUrl = page.url|remove:'index.html' %}
           {% assign header_pages = site.pages | where: 'show_in_header', 'true' | sort: 'index' %}
             {% for page in header_pages  %}
             {% if page.title %}
           <li class="nav-item">
-            <a class="nav-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+            <a class="nav-link {% if page.url == currentUrl %}active{% endif %}" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           </li>
             {% endif %}
           {% endfor %}
