@@ -7,6 +7,7 @@ title: "Associazione RISORSE"
   {% assign upcoming_events = site.eventi | where: 'stato', 'futuro' | sort: 'data_evento' %}
   {% assign upcoming_events_len = upcoming_events | size %}
   {% assign recent_events = site.eventi | where: 'stato', 'completato' | sort: 'data_evento' | reverse %}
+  {% assign recent_events_len = recent_events | size %}
   {% assign recent_events_limit = 6 %}
   {% if upcoming_events_len <= 1 0 %}
   {% assign recent_events_limit = 12 %}
@@ -80,7 +81,7 @@ title: "Associazione RISORSE"
           {% endif %}
           {% endfor %}
           <div class="row all-past-events">
-            <a href="{{ "/eventi/archivio" | prepend: site.baseurl }}">Tutti gli eventi prececenti...
+            <a href="{{ "/eventi/archivio" | prepend: site.baseurl }}">Tutti gli eventi prececenti ({{ recent_events_len }})...
             </a>
           </div>
       </div>
