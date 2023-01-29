@@ -1,5 +1,5 @@
 section{
-    padding: 100px 0px;
+    padding: 50px 0px 50px 0px;
 }
 
 .container, .text-container {
@@ -28,7 +28,7 @@ section{
     color: #ffffff;
     text-align: center;
     background: linear-gradient(to bottom, #4182e4 0%, #4182e4 100%) no-repeat #a05fb7;
-    padding-top: 50px;
+    // padding-top: 50px;
 
     p{
         color: #ffffff;
@@ -38,7 +38,7 @@ section{
 .quote {
     background: #f5f5f5;
     margin: 0;
-    padding: 100px 0;
+    // padding: 100px 0;
 
     .quote-block {
         max-width: 750px;
@@ -130,42 +130,38 @@ p.metadata{
 
     .purpose-block{
     }
+}
 
-    .recent-events{
+.recent-events{
+    background-color: #f5f5f5;
 
-        @media screen and (max-width: 767px) {
-            border-left: none;
-          }
-        
-        @media screen and (min-width: 768px) {
-            border-left: rgb(191, 191, 191) 1px solid;
-          }
+    .recent-events-block{
 
         h5{
             color:rgb(75, 75, 75);
         }
-    }
 
-    li.recent-event{
-        list-style: none;
-        margin-left: -30px;
-        margin-bottom: 10px;
-    }
-
-    .recent-event{
-        font-weight: 300;
-        line-height: 1.2em;
-
-        a{
-            text-decoration: none;
-            color: #666;
-
-            p{
-                margin-bottom: 0px;
-            }
-
-            p.metadata{
-                font-style: italic;
+        li.recent-event{
+            list-style: none;
+            margin-left: -30px;
+            margin-bottom: 10px;
+        }
+    
+        .recent-event{
+            font-weight: 300;
+            line-height: 1.2em;
+    
+            a{
+                text-decoration: none;
+                color: #666;
+    
+                p{
+                    margin-bottom: 0px;
+                }
+    
+                p.metadata{
+                    font-style: italic;
+                }
             }
         }
     }

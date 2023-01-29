@@ -41,13 +41,18 @@ layout: default
   {% endif %}
 
   <section class="purpose">
-		<div class="container flex row">
-			<div class="purpose-block col-md-7">
+		<div class="container flex">
+			<div class="purpose-block">
 				<blockquote>
 					<p class="description">L'associazione RISORSE ha lo scopo di diffondere e valorizzare la conoscenza, la riflessione e lo studio della cultura economica, anche ponendosi in relazione confronto con altre tipologie del sapere, nonché con i molteplici aspetti dell'essere umano e delle sue storiche espressioni, con particolare riferimento alla realtà locale.</p>
 				</blockquote>
 			</div>
-			<div class="col-md-5 recent-events">
+		</div>
+	</section>
+
+  <section class="recent-events">
+    <div class="container flex">
+      <div class="recent-events-block">
         <h5>Eventi recenti</h5>
         <ul>
           {% for recent_event in recent_events limit:3 %}
@@ -69,8 +74,8 @@ layout: default
           </li>
         </ul>
       </div>
-		</div>
-	</section>
+    </div>
+  </section>
 
   {% if len > 1 %}
   <section class="events">
