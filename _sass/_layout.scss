@@ -133,34 +133,37 @@ p.metadata{
 .recent-events{
     background-color: #f5f5f5;
 
+    a{
+        text-decoration: none;
+        color: #666;
+    }
+
     .recent-events-block{
 
         h5{
+            text-align: center;
             color:rgb(75, 75, 75);
         }
 
-        li.recent-event{
-            list-style: none;
-            margin-left: -30px;
-            margin-bottom: 10px;
+        .recent-events-row{
+            margin-bottom: 15px;
         }
     
         .recent-event{
             font-weight: 300;
-            line-height: 1.2em;
-    
-            a{
-                text-decoration: none;
-                color: #666;
-    
-                p{
-                    margin-bottom: 0px;
-                }
-    
-                p.metadata{
-                    font-style: italic;
-                }
+
+            p{
+                margin-bottom: 0px;
             }
+
+            p.metadata{
+                font-style: italic;
+                margin-bottom: 0px;
+            }
+        }
+
+        .all-past-events{
+            text-align: right;
         }
     }
 }
@@ -170,7 +173,6 @@ p.metadata{
 
     h3{
         text-align: center;
-        font-style: italic;
     }
 
     .container{

@@ -54,25 +54,30 @@ layout: default
     <div class="container flex">
       <div class="recent-events-block">
         <h5>Eventi recenti</h5>
-        <ul>
-          {% for recent_event in recent_events limit:3 %}
-          <li class="recent-event">
-            <a href="{{ recent_event.url | prepend: site.baseurl }}">
-              <p class="metadata">{% include translated_date.html date=recent_event.data_evento format="%-d %B, %Y" %}</p>
-              <p>{{ recent_event.titolo }}</p>
-              {% if recent_event.relatori %}
-              <p class="metadata">{{ recent_event.relatori }}</p>
-              {% endif %}
-            </a>
-          </li>
+          {% for recent_event in recent_events limit:6 %}
+          {% assign mod = forloop.index | modulo: 2 %}
+          {% if mod != 0 %}
+          <div class="row recent-events-row">
+          {% endif %}
+            <div class="col-md-6 recent-event">
+              <a href="{{ recent_event.url | prepend: site.baseurl }}" title="{{ recent_event.titolo }}">
+                <p class="metadata">
+                  <span>{% include translated_date.html date=recent_event.data_evento format="%-d %B, %Y" %}</span>
+                  {% if recent_event.relatori %}
+                  <span>- {{ recent_event.relatori }}</span>
+                  {% endif %}
+                </p>
+                <p>{{ recent_event.titolo }}</p>
+              </a>
+            </div>
+          {% if mod == 0 %}
+          </div>
+          {% endif %}
           {% endfor %}
-          <li class="recent-event">
-            <hr />
-            <a href="{{ "/eventi/archivio" | prepend: site.baseurl }}">
-              <p class="metadata">Tutti gli eventi prececenti...</p>
+          <div class="row all-past-events">
+            <a href="{{ "/eventi/archivio" | prepend: site.baseurl }}">Tutti gli eventi prececenti...
             </a>
-          </li>
-        </ul>
+          </div>
       </div>
     </div>
   </section>
