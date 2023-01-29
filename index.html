@@ -5,7 +5,7 @@ layout: default
 
   {% assign upcoming_events = site.eventi | where: 'stato', 'futuro' | sort: 'data_evento' %}
   {% assign len = upcoming_events | size %}
-  {% assign recent_events = site.eventi | where: 'stato', 'completato' | sort: 'data_evento' |  %}
+  {% assign recent_events = site.eventi | where: 'stato', 'completato' | sort: 'data_evento' | reverse %}
 
   <section class="hero">
     <div class="text-container associazione-block">
