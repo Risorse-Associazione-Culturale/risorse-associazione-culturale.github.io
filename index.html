@@ -5,8 +5,12 @@ title: "Associazione RISORSE"
 <div>
 
   {% assign upcoming_events = site.eventi | where: 'stato', 'futuro' | sort: 'data_evento' %}
-  {% assign len = upcoming_events | size %}
+  {% assign upcoming_events_len = upcoming_events | size %}
   {% assign recent_events = site.eventi | where: 'stato', 'completato' | sort: 'data_evento' | reverse %}
+  {% assign recent_events_limit = 6 %}
+  {% if upcoming_events_len <= 1 0 %}
+  {% assign recent_events_limit = 12 %}
+  {% endif %}
 
   <section class="hero">
     <div class="text-container associazione-block">
@@ -15,7 +19,7 @@ title: "Associazione RISORSE"
     </div>  
   </section>
 
-  {% if len > 0 %}
+  {% if upcoming_events_len > 0 %}
   <section class="hero main-event">
     {% assign first_upcoming_event = upcoming_events[0] %}
     <div class="text-container">
@@ -55,7 +59,7 @@ title: "Associazione RISORSE"
     <div class="container flex">
       <div class="recent-events-block">
         <h5>Eventi recenti</h5>
-          {% for recent_event in recent_events limit:6 %}
+          {% for recent_event in recent_events limit:recent_events_limit %}
           {% assign mod = forloop.index | modulo: 2 %}
           {% if mod != 0 %}
           <div class="row recent-events-row">
@@ -83,7 +87,7 @@ title: "Associazione RISORSE"
     </div>
   </section>
 
-  {% if len > 1 %}
+  {% if upcoming_events_len > 1 %}
   <section class="events">
     <div class="text-container">
       <h3>Prossimamente...</h3>
