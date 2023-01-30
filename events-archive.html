@@ -1,0 +1,35 @@
+---
+layout: default
+show_in_header: true
+title: "Eventi precedenti"
+permalink: /archivio/eventi
+index: 1
+---
+
+<div class="page">
+
+  {% assign past_events = site.eventi | where: 'stato', 'completato' | sort: 'data_evento' | reverse %}
+  <div>
+    <ul class="past-events">
+      {% for event in past_events %}
+      <li class="past-event">
+        <p class="metadata">
+          <span>{% include translated_date.html date=event.data_evento format="%-d %B, %Y" %}</span>
+          {% if event.relatori %}
+          <span>- {{ event.relatori }}</span>
+          {% endif %}
+        </p>
+        <p>{{ event.titolo }}</p>
+        {% if event.recording %}
+          <p class="metadata">
+            Visualizza la registrazione: <a href="{{ event.recording }}" target="_blank">{{ event.recording }}</a>
+          </p>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  
+  <div>Visualizza tutti i <a href="{{ '/cicli' | prepend: site.baseurl }}">cicli</a>.</div>
+
+</div>
