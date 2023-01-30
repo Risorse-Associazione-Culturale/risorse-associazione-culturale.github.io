@@ -61,15 +61,20 @@ title: "Associazione RISORSE"
           <div class="row recent-events-row">
           {% endif %}
             <div class="col-md-6 recent-event">
-              <a href="{{ recent_event.url | prepend: site.baseurl }}" title="{{ recent_event.titolo }}">
-                <p class="metadata">
-                  <span>{% include translated_date.html date=recent_event.data_evento format="%-d %B, %Y" %}</span>
-                  {% if recent_event.relatori %}
-                  <span>- {{ recent_event.relatori }}</span>
-                  {% endif %}
-                </p>
-                <p>{{ recent_event.titolo }}</p>
-              </a>
+              <p class="metadata">
+                <span>{% include translated_date.html date=recent_event.data_evento format="%-d %B, %Y" %}</span>
+                {% if recent_event.relatori %}
+                <span>- {{ recent_event.relatori }}</span>
+                {% endif %}
+              </p>
+              <p>{{ recent_event.titolo }}
+                {% if recent_event.recording %}
+                <a href="{{ recent_event.recording }}" title="Visualizza la registrazione"
+                   target="_blank">
+                   <i class="bi bi-youtube"></i>
+                </a>
+                {% endif %}
+              </p>
             </div>
           {% if mod == 0 %}
           </div>
