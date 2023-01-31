@@ -9,7 +9,7 @@ title: "Associazione RISORSE"
   {% assign recent_events = site.eventi | where: 'stato', 'completato' | sort: 'data_evento' | reverse %}
   {% assign recent_events_len = recent_events | size %}
   {% assign recent_events_limit = 6 %}
-  {% if upcoming_events_len <= 1 0 %}
+  {% if upcoming_events_len <= 1 %}
   {% assign recent_events_limit = 12 %}
   {% endif %}
 
