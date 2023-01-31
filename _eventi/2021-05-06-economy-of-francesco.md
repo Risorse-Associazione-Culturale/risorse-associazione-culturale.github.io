@@ -1,6 +1,6 @@
 ---
 layout: event
-stato: 'completato'
+stato: "completato"
 titolo: "The Economy of Francesco. Narrazioni tra Eco-logia ed Eco-nomia"
 relatori: "Stefano Rozzoni"
 data_evento: "2021-05-06"

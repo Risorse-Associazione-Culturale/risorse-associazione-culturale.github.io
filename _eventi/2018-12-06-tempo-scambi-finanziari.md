@@ -1,6 +1,6 @@
 ---
 layout: event
-stato: 'completato'
+stato: "completato"
 titolo: "Tempo e scambi finanziari"
 relatori: "Prof. Mario Masini"
 data_evento: "2018-12-06"

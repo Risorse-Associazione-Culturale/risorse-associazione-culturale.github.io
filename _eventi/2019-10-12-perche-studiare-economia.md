@@ -1,6 +1,6 @@
 ---
 layout: event
-stato: 'completato'
+stato: "completato"
 titolo: "Perché studiare economia?"
 relatori: "Prof. Alessandro Roncaglia (DG del CENSIS)"
 data_evento: "2019-10-12"
