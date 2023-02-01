@@ -130,6 +130,9 @@ title: "Associazione RISORSE"
 				<blockquote>
           <p class="text">{{ citazione.testo }}</p>
           <p class="author">—{{ citazione.autore }}</p>
+          {% if citazione.fonte %}
+          <p class="source">{{ citazione.fonte }}</p>
+          {% endif %}
 				</blockquote>
 			</div>
 		</div>
