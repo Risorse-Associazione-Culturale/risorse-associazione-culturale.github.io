@@ -36,7 +36,7 @@ title: "Associazione RISORSE"
       %}
       <div>
         <h3>
-          <a href="{{ first_upcoming_event.url | prepend: site.baseurl }}" class="muted-link">{{ first_upcoming_event.titolo }}</a>
+          {{ first_upcoming_event.titolo }}
         </h3>
         {% include event_speakers.html speakers=first_upcoming_event.relatori %}
         {% include event_date_time.html
