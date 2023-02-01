@@ -1,6 +1,6 @@
 {% include event_date_time.html date=include.event.data_evento time=include.event.ora_evento %}
 <h4>
-    <a href="{{ include.event.url | prepend: site.baseurl }}" class="muted-link">{{ include.event.titolo }}</a>
+    {{ include.event.titolo }}
 </h4>
 {% include event_speakers.html speakers=include.event.relatori %}
 {% include event_location.html event=include.event %}
