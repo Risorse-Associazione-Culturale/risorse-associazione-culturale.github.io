@@ -23,6 +23,6 @@ collections:
   cicli:
     output: true
   eventi:
-    output: true
+    output: false
   relatori:
     output: true
