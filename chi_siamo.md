@@ -18,7 +18,7 @@ Con le nostre iniziative offriremo un percorso culturale in materia socio econom
 
 L’associazione RISORSE ha lo scopo di diffondere e valorizzare la conoscenza, la riflessione e lo studio della cultura economica, anche ponendosi in relazione confronto con altre tipologie del sapere, nonché con i molteplici aspetti dell’essere umano e delle sue storiche espressioni, con particolare riferimento alla realtà locale.
 
-​Per leggere l’Atto Costitutivo e lo Statuto, clicca QUI (link da aggiungere).
+[L’Atto Costitutivo](/assets/2016-01-15-atto-costitutivo.pdf) e [lo Statuto](/assets/2022-03-05-statuto.pdf) sono disponinbili per la consultazione.
 
 ## Presentazione
 
