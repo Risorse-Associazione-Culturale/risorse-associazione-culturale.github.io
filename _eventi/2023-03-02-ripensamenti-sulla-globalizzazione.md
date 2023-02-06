@@ -1,6 +1,6 @@
 ---
 layout: event
-stato: "futuro"
+stato: "__"
 titolo: "Ripensamenti sulla globalizzazione, con particolare riferimento alle imprese del territorio"
 relatori: "Dott. "
 data_evento: "2023-03-02"
