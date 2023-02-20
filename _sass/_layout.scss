@@ -218,3 +218,29 @@ footer {
     position: relative;
     background: #2b2b40;
 }
+
+.note {
+    text-align: center;
+    font-style: italic;
+}
+
+.balance-sheets{
+    a{
+        text-decoration: none;
+        color: #000;
+    }
+
+    .balance-sheet{
+        font-weight: 300;
+        margin-bottom: 15px;
+
+        p{
+            margin-bottom: 0px;
+        }
+
+        p.metadata{
+            font-style: italic;
+            margin-bottom: 0px;
+        }
+    }
+}

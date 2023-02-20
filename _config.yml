@@ -22,3 +22,5 @@ collections:
     output: false
   eventi:
     output: false
+  bilanci:
+    output: false

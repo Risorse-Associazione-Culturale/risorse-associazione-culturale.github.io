@@ -1,0 +1,36 @@
+---
+layout: default
+show_in_header: true
+permalink: /bilanci-relazioni
+title: Bilanci e relazioni
+index: 2
+---
+
+<div class="page">
+
+    {% assign bilanci = site.bilanci | sort: 'anno' | reverse %}
+    {% assign bilanci_len = bilanci | size %}
+    {% if bilanci_len > 0 %}
+    <div>
+      <ul class="balance-sheets">
+        {% for balancio in bilanci %}
+        <li class="balance-sheet">
+          <p class="metadata">
+            <span>{{ balancio.anno }}</span>
+          </p>
+          <p>{{ balancio.titolo }}</p>
+          <p class="metadata">
+              <i class="bi bi-cloud-arrow-down-fill"></i> Scarica la documentazione: <a href="{{ balancio.download_link }}">{{ balancio.download_link }}</a>
+          </p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% else %}
+    <section>
+      <div class="text-container note">Nessuna documentazione attualmente disponibile.</div>
+    </section>
+    {% endif %}
+  
+  </div>
+  
