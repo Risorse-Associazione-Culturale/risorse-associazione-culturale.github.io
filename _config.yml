@@ -20,9 +20,5 @@ lang: it
 collections:
   citazioni:
     output: false
-  cicli:
-    output: true
   eventi:
     output: false
-  relatori:
-    output: true
