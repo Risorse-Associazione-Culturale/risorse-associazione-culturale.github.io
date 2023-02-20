@@ -14,7 +14,7 @@ index: 1
       {% for event in past_events %}
       <li class="past-event">
         <p class="metadata">
-          <span>{% include translated_date.html date=event.data_evento format="%-d %B, %Y" %}</span>
+          <span>{% include translated_date.html date=event.data_evento format="%-d %B %Y" %}</span>
           {% if event.relatori %}
           <span>- {{ event.relatori }}</span>
           {% endif %}
