@@ -22,7 +22,7 @@ index: 1
         <p>{{ event.titolo }}</p>
         {% if event.recording %}
           <p class="metadata">
-            <i class="bi bi-youtube"></i> Visualizza la registrazione: <a href="{{ event.recording }}" target="_blank">{{ event.recording }}</a>
+            <a href="{{ event.recording }}" target="_blank"><i class="bi bi-youtube"></i> Visualizza la registrazione: {{ event.recording }}</a>
           </p>
         {% endif %}
       </li>
