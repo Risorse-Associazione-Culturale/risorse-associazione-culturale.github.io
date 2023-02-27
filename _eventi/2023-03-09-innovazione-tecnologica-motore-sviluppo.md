@@ -5,6 +5,6 @@ titolo: "L’innovazione tecnologica, quale motore di un nuovo sviluppo, inizia 
 relatori: "Dott. Stefano Ierace (Responsabile innovazione presso Confindustria Bergamo)"
 data_evento: "2023-03-09"
 ora_evento: "20:45"
-is_conference_call: true
-conference_call_link: https://us02web.zoom.us/j/89671136502?pwd=dmVVd2VvSDVQZGxJa2E0d0VNVmJtdz09
+evento_online: true
+link_evento_online: https://us02web.zoom.us/j/89671136502?pwd=dmVVd2VvSDVQZGxJa2E0d0VNVmJtdz09
 ---

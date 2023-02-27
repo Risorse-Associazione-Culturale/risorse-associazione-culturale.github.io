@@ -2,13 +2,13 @@
     {% if include.event.luogo %}
     {{ include.event.luogo }}
     {% endif %}
-    {% if include.event.is_conference_call and include.event.luogo %}
+    {% if include.event.evento_online and include.event.luogo %}
     <br />
     {% endif %}
-    {% if include.event.is_conference_call %}
+    {% if include.event.evento_online %}
     L'evento è online: 
-        {% if include.event.conference_call_link %}
-        <a href="{{ include.event.conference_call_link }}" target="_blank">collegati alla conferenza.</a> 
+        {% if include.event.link_evento_online %}
+        <a href="{{ include.event.link_evento_online }}" target="_blank">collegati alla conferenza.</a> 
         {% else %}
         Il link per la connessione verrà fornito a breve.
         {% endif %}
