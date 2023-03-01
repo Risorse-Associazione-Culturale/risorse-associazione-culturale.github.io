@@ -1,6 +1,5 @@
 ---
-testo: "I difetti più evidenti della Società economica nella quale viviamo sono l’incapacità a provvedere la piena occupazione e la distribuzione arbitraria e iniqua delle ricchezze e dei redditi."
-autore: "John Maynard Keynes"
-fonte: "Teoria generale dell’occupazione, dell’interesse e della moneta (1936)"
-immagine: "/img/quote/jmk.jpeg"
+testo: "Le innovazioni, i mutamenti nelle forme di mercato e i cambiamenti nella distribuzione del reddito sono i tre aspetti fondamentali del processo di sviluppo economico."
+autore: "Paolo Sylos Labini (1920 – 2005)"
+immagine: "/img/quote/psl.png"
 ---
