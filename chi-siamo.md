@@ -46,7 +46,7 @@ L’Associazione potrà, oltre che collaborare, aderire a qualsiasi organizzazio
 
 La Fondazione, costituita il 1° maggio del 2000, è attiva negli ambiti del lavoro, della formazione e delle pari opportunità.
 
-### L’Istituto Istituto Statale di Istruzione Secondaria Superiore “Guglielmo Oberdan”
+### L’Istituto Statale di Istruzione Secondaria Superiore “Guglielmo Oberdan”
 
 Storicamente uno dei primi istituti superiori sorto a Treviglio, è inserito da lungo tempo nella realtà territoriale diventando un tradizionale punto di riferimento per la formazione dei giovani.
 
