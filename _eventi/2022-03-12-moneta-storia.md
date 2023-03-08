@@ -4,5 +4,5 @@ stato: "completato"
 titolo: "La moneta e la sua storia"
 relatori: "Massimo Amato (UNIBocconi)"
 data_evento: "2022-03-12"
-recording: https://youtu.be/HbwwvQb9DWk
+registrazione: https://youtu.be/HbwwvQb9DWk
 ---
