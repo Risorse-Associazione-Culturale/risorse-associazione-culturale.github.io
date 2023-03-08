@@ -67,12 +67,19 @@ title: "Associazione RISORSE"
                 <span>- {{ recent_event.relatori }}</span>
                 {% endif %}
               </p>
-              <p>{{ recent_event.titolo }}
+              <p>{{ recent_event.titolo }}</p>
+              <p class="metadata">
                 {% if recent_event.registrazione %}
+                  {% if recent_event.registrazione == "" %}
+                <a href="javascript:void(0);" title="Registrazione in fase di elaborazione">
+                  <i class="bi bi-hourglass-split"></i> Registrazione in elaborazione
+                </a>
+                  {% else %}
                 <a href="{{ recent_event.registrazione }}" title="Visualizza la registrazione"
                    target="_blank">
-                   <i class="bi bi-youtube"></i>
+                   <i class="bi bi-youtube"></i> Visualizza la registrazione
                 </a>
+                  {% endif %}
                 {% endif %}
               </p>
             </div>
