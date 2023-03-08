@@ -42,7 +42,7 @@ title: "Associazione RISORSE"
         {% include event_date_time.html
                    date=first_upcoming_event.data_evento
                    time=first_upcoming_event.ora_evento %}
-        {% include event_location.html event=first_upcoming_event %}
+        {% include event_location.html event=first_upcoming_event is_main_event=true %}
         {% if first_upcoming_event.abstract %}
         <p>{{ first_upcoming_event.abstract }}</p>
         {% endif %}
