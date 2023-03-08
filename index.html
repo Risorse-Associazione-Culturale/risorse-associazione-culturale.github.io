@@ -69,10 +69,16 @@ title: "Associazione RISORSE"
               </p>
               <p>{{ recent_event.titolo }}
                 {% if recent_event.registrazione %}
+                  {% if event.registrazione == "" %}
+                <a href="javascript:void(0);" title="Registrazione in fase di elaborazione">
+                  <i class="bi bi-hourglass-split"></i>
+                </a>
+                  {% else %}
                 <a href="{{ recent_event.registrazione }}" title="Visualizza la registrazione"
                    target="_blank">
                    <i class="bi bi-youtube"></i>
                 </a>
+                  {% endif %}
                 {% endif %}
               </p>
             </div>

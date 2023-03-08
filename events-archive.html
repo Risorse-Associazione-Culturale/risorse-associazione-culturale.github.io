@@ -22,7 +22,11 @@ index: 1
         <p>{{ event.titolo }}</p>
         {% if event.registrazione %}
           <p class="metadata">
+            {% if event.registrazione == "" %}
+            <i class="bi bi-youtube"></i> Registrazione in fase di elaborazione
+            {% else %}
             <a href="{{ event.registrazione }}" target="_blank"><i class="bi bi-youtube"></i> Visualizza la registrazione: {{ event.registrazione }}</a>
+            {% endif %}
           </p>
         {% endif %}
       </li>
