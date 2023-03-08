@@ -7,10 +7,3 @@
 {% if include.event.abstract %}
 <p>{{ include.event.abstract }}</p>
 {% endif %}
-<!-- {% if include.event.ciclo %}
-<p>Ciclo:&nbsp;
-    {% assign matching_cicli = site.cicli | where: 'ciclo',include.event.ciclo %}
-    {% assign current_ciclo = matching_cicli[0] %}
-    <a href="{{ current_ciclo.url | prepend: site.baseurl }}"><nobr>{{ current_ciclo.titolo }}</nobr></a>
-</p>
-{% endif %} -->
