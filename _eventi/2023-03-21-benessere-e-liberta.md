@@ -6,4 +6,5 @@ relatori: "Prof. Chiara Giaccardi e Prof. Mauro Magatti (Università Cattolica d
 data_evento: "2023-03-21"
 ora_evento: "20:45"
 evento_online: true
+url_immagine: /img/events/Magatti-Giaccardi-2.png
 ---
