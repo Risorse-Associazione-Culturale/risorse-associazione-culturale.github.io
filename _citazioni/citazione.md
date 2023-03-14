@@ -1,5 +1,5 @@
 ---
-testo: "Le innovazioni, i mutamenti nelle forme di mercato e i cambiamenti nella distribuzione del reddito sono i tre aspetti fondamentali del processo di sviluppo economico."
-autore: "Paolo Sylos Labini (1920 – 2005)"
-immagine: "/img/quote/psl.png"
+testo: "C’è una cosa che va fatta: invitare governi e organizzazioni internazionali a integrare le cifre del prodotto nazionale lordo con altre informazioni concernenti le linee di tendenza della sperequazione sociale, delle opportunità misurabili, nonché dei diritti umani e delle libertà; alla cifra nuda e cruda, e spesso fuorviante, deve subentrare un’analisi più appropriata della ricchezza."
+autore: "Ralf Dahrendorf (1929-2009)"
+immagine: "/img/quote/ralf-dahrendorf.jpg"
 ---
