@@ -1,6 +1,6 @@
 ---
 layout: event
-stato: "futuro"
+stato: "completato"
 titolo: "Ripensamenti sulla globalizzazione"
 relatori: "Prof.ssa Giovanna Vertova (UNIBG)"
 data_evento: "2023-03-15"
