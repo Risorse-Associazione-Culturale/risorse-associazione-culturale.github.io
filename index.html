@@ -124,7 +124,7 @@ title: "Associazione RISORSE"
   </section>
   {% endif %}
 
-  <section class="quote">
+  <section class="quote {% if upcoming_events_len < 2 %}quote-inverted{% endif %}">
 		<div class="container flex">
 			<div class="quote-block">
         {% assign citazione = site.citazioni | sample %}
