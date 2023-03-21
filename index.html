@@ -10,9 +10,19 @@ title: "Associazione RISORSE"
   {% assign recent_events_len = recent_events | size %}
   {% assign recent_events_limit = 6 %}
   {% if upcoming_events_len <= 1 %}
-  {% assign recent_events_limit = 12 %}
+    {% assign recent_events_limit = 12 %}
   {% endif %}
-
+  {% if upcoming_events_len == 0 %}
+    {% assign quote_position = 'top' %}
+    {% assign use_inverted_colors_for_quote = true %}
+  {% elsif upcoming_events_len < 2 %}
+    {% assign quote_position = 'bottom' %}
+    {% assign use_inverted_colors_for_quote = true %}
+  {% else %}
+    {% assign quote_position = 'bottom' %}
+    {% assign use_inverted_colors_for_quote = false %}
+  {% endif %}
+  
   <section class="hero">
     <div class="text-container associazione-block">
         <h1 class="title">Associazione <strong>RISORSE</strong></h1>
@@ -24,6 +34,10 @@ title: "Associazione RISORSE"
       </blockquote>
 		</div>
   </section>
+
+{% if quote_position == 'top' %}
+  {% include quote.html use_inverted_colors=use_inverted_colors_for_quote %}
+{% endif %}
 
   {% if upcoming_events_len > 0 %}
   <section class="hero main-event">
@@ -124,25 +138,8 @@ title: "Associazione RISORSE"
   </section>
   {% endif %}
 
-  <section class="quote {% if upcoming_events_len < 2 %}quote-inverted{% endif %}">
-		<div class="container flex">
-			<div class="quote-block">
-        {% assign citazione = site.citazioni | sample %}
-        {% if citazione.immagine %}
-        <div class="square-image">
-          <img src="{{ citazione.immagine }}"
-               alt="{{ citazione.autore }}">
-        </div>
-        {% endif %}
-				<blockquote>
-          <p class="text">{{ citazione.testo }}</p>
-          <p class="author">—&nbsp;{{ citazione.autore }}</p>
-          {% if citazione.fonte %}
-          <p class="source">{{ citazione.fonte }}</p>
-          {% endif %}
-				</blockquote>
-			</div>
-		</div>
-	</section>
 
+{% if quote_position == 'bottom' %}
+  {% include quote.html use_inverted_colors=use_inverted_colors_for_quote %}
+{% endif %}
  </div>
