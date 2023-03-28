@@ -1,5 +1,6 @@
 ---
-testo: "C’è una cosa che va fatta: invitare governi e organizzazioni internazionali a integrare le cifre del prodotto nazionale lordo con altre informazioni concernenti le linee di tendenza della sperequazione sociale, delle opportunità misurabili, nonché dei diritti umani e delle libertà; alla cifra nuda e cruda, e spesso fuorviante, deve subentrare un’analisi più appropriata della ricchezza."
-autore: "Ralf Dahrendorf (1929-2009)"
-immagine: "/img/quote/ralf-dahrendorf.jpg"
+testo: "Uomini più saggi e più preparati di me hanno visto nella storia una trama, un ritmo, un disegno prestabilito. Io queste armonie non riesco a vederle. Tutto quello che riesco a vedere sono delle situazioni di emergenza che si susseguono le une alle altre come fanno le onde."
+autore: "Herbert Albert Laurens Fisher (1865-1940)"
+bio: "Storico e uomo politico inglese."
+immagine: "/img/quote/half.jpg"
 ---

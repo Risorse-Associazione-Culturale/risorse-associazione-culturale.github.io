@@ -62,7 +62,7 @@ section{
             font-style: normal;
         }
 
-        .source{
+        .source, .bio{
             font-size: $small-font-size;
             font-style: normal;
         }
@@ -102,7 +102,7 @@ section{
 .quote-inverted{
     background: linear-gradient(to bottom, #4182e4 0%, #4182e4 100%) no-repeat #a05fb7;
 
-    p.text, p.author, p.source{
+    p.text, p.author, p.source, p.bio{
         color: #f5f5f5;
     }
 }

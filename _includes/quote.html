@@ -11,6 +11,9 @@
             <blockquote>
       <p class="text">{{ citazione.testo }}</p>
       <p class="author">—&nbsp;{{ citazione.autore }}</p>
+      {% if citazione.bio %}
+      <p class="bio">{{ citazione.bio }}</p>
+      {% endif %}
       {% if citazione.fonte %}
       <p class="source">{{ citazione.fonte }}</p>
       {% endif %}
