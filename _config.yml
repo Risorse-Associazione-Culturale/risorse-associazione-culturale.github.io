@@ -17,6 +17,9 @@ plugins:
 
 lang: it
 
+github_org:  Risorse-Associazione-Culturale
+github_repository:  risorse-associazione-culturale.github.io
+
 collections:
   citazioni:
     output: false
