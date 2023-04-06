@@ -6,5 +6,5 @@ relatori: "Prof.ssa Patrizia Farina"
 data_evento: "2016-10-17"
 ora_evento: "20:45"
 luogo: "Ist. Oberdan"
-registrazione:https://youtu.be/4PkgSuIzuKA 
+registrazione: https://youtu.be/4PkgSuIzuKA 
 ---
