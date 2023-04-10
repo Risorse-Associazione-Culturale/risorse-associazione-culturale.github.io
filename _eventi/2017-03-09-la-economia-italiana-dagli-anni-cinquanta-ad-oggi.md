@@ -6,5 +6,5 @@ relatori: "Dott. Sergio Ferrari"
 data_evento: "2017-03-09"
 ora_evento: "20:45"
 luogo: "Ist. Oberdan"
-registrazione: ""
+registrazione: "https://youtu.be/YlWfB1knKno"
 ---
