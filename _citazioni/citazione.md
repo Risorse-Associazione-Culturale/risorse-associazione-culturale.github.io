@@ -1,6 +1,6 @@
 ---
-testo: "Uomini più saggi e più preparati di me hanno visto nella storia una trama, un ritmo, un disegno prestabilito. Io queste armonie non riesco a vederle. Tutto quello che riesco a vedere sono delle situazioni di emergenza che si susseguono le une alle altre come fanno le onde."
-autore: "Herbert Albert Laurens Fisher (1865-1940)"
-bio: "Storico e uomo politico inglese."
-immagine: "/img/quote/half.jpg"
+testo: "Per capire il cambiamento economico, dall’ascesa del mondo occidentale al crollo dell’Unione Sovietica, dobbiamo gettare la rete al di là del mero aspetto economico, giacché i cambiamenti dell’economia sono il risultato di trasformazioni che avvengono: a) nella ‘quantità’ e ‘qualità’ degli esseri umani; b) nell’ammontare delle conoscenze, in particolare quelle che riguardano il dominio dell’uomo sulla natura; c) nella cornice istituzionale che definisce la struttura degli incentivi voluta da una società."
+autore: "Douglass C. North (1920 – 2015)"
+bio: "Premio Nobel 1993 per l'Economia"
+immagine: "/img/quote/douglas-c-north.jpg"
 ---
