@@ -27,3 +27,7 @@ collections:
     output: false
   bilanci:
     output: false
+  libri:
+    output: true
+  categorie_libri:
+    output: true
