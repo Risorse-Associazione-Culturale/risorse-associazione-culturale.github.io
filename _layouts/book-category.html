@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<div class="page book-category">
+
+    <h1>{{ page.titolo }}</h1>
+    <ul>
+        {% assign books_in_category = site.libri | where: 'categoria',page.categoria %}
+        {% for book in books_in_category %}
+        <li>
+            <a class="muted-link" href="{{ book.url | prepend: site.baseurl }}">{{ book.titolo }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+</div>
