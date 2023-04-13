@@ -1,0 +1,23 @@
+---
+layout: default
+show_in_header: true
+permalink: /categorie_libri
+title: Libri in primo piano
+index: 2
+---
+
+<div class="page">
+
+    <div>
+      <ul class="book-categories">
+        {% for book_category in site.categorie_libri %}
+        <li class="book-category">
+          <p>
+            <a class="muted-link" href="{{ book_category.url | prepend: site.baseurl }}">{{ book_category.titolo }}</a>
+          </p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  
+  </div>
