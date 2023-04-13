@@ -29,5 +29,5 @@ collections:
     output: false
   libri:
     output: true
-  categorie_libri:
+  categorie-libri:
     output: true
