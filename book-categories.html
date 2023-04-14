@@ -12,9 +12,20 @@ index: 2
       <ul class="book-categories">
         {% for book_category in site.categorie-libri %}
         <li class="book-category">
-          <p>
-            <a class="muted-link" href="{{ book_category.url | prepend: site.baseurl }}">{{ book_category.titolo }}</a>
-          </p>
+          <p>{{ book_category.titolo }}</p>
+          {% assign books_in_category = site.libri | where: 'categoria', book_category.categoria %}
+          {% assign books_in_category_count = books_in_category.size %}
+          {% if books_in_category_count > 0 %}
+          <ul class="books">
+          {% for book in books_in_category %}
+            <li class="book">
+              <p>
+                <a class="muted-link" href="{{ book.url | prepend: site.baseurl }}">{{ book.titolo }},&nbsp;{{ book.autori }}</a>
+              </p>
+            </li>
+          {% endfor %}
+          </ul>
+          {% endif %}
         </li>
         {% endfor %}
       </ul>
