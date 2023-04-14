@@ -30,4 +30,4 @@ collections:
   libri:
     output: true
   categorie-libri:
-    output: true
+    output: false
