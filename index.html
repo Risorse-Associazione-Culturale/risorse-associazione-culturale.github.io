@@ -60,7 +60,7 @@ title: "Associazione RISORSE"
         {% if first_upcoming_event.abstract %}
         <p>{{ first_upcoming_event.abstract }}</p>
         {% endif %}
-        {% if first_upcoming_event.link.url %}
+        {% if first_upcoming_event.link %}
         <p class="metadata">
           <a href="{{ first_upcoming_event.link.url }}"
              title="{{ first_upcoming_event.link.testo }}"
