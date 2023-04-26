@@ -7,3 +7,10 @@
 {% if include.event.abstract %}
 <p>{{ include.event.abstract }}</p>
 {% endif %}
+{% if include.event.link %}
+<p class="metadata">
+    <a href="{{ include.event.link.url }}"
+        title="{{ include.event.link.testo }}"
+        target="_blank">{{ include.event.link.testo }}</a>
+</p>
+{% endif %}
