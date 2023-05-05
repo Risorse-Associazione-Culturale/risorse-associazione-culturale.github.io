@@ -1,6 +1,6 @@
 ---
 layout: event
-stato: "futuro"
+stato: "completato"
 titolo: "Assemblea Sociale"
 relatori: "Tutti i soci sono invitati"
 data_evento: "2023-04-28"
