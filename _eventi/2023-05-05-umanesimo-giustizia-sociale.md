@@ -1,6 +1,6 @@
 ---
 layout: evento
-stato: "futuro"
+stato: "completato"
 titolo: "C’è spazio per un umanesimo attento ad una nuova giustizia sociale?"
 relatori: "Ferruccio Capelli, direttore della Casa della Cultura di Milano"
 data_evento: "2023-05-05"
