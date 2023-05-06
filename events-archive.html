@@ -9,7 +9,7 @@ index: 1
 <div class="page">
 
   {% assign past_events = site.eventi | where: 'stato', 'completato' | sort: 'data_evento' | reverse %}
-  <div>
+  <div class="text-container">
     <ul class="past-events">
       {% for event in past_events %}
       <li class="past-event">
