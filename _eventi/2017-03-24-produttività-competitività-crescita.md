@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "produttività competitività crescita"
 relatori: "Prof.ssa Annamaria Simonazzi (UNIRoma Sapienza)"

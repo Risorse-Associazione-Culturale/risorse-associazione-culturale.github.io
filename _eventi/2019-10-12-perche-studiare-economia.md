@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Perché studiare economia?"
 relatori: "Prof. Alessandro Roncaglia (UNI Sapienza – Accademico dei Lincei)"

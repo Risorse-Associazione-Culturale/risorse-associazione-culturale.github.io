@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Tempo e scambi finanziari"
 relatori: "Prof. Mario Masini (UNIBG)"

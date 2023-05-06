@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Fisco e spesa pubblica. Moneta e credito"
 relatori: "Prof.ssa Anna Maria Variato (UNIBG)"

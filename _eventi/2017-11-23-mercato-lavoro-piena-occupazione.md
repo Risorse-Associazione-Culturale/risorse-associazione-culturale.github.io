@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Il mercato del lavoro e la piena occupazione"
 relatori: "Prof.ssa Giovanna Vertova (UNIBG)"

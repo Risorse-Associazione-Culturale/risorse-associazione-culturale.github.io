@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Cosa sono i beni comuni?"
 relatori: "Prof. Lorenzo Sacconi (UNITrento)"

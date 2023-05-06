@@ -1,5 +1,4 @@
 ---
-layout: evento
 stato: "completato"
 titolo: "C’è spazio per un umanesimo attento ad una nuova giustizia sociale?"
 relatori: "Ferruccio Capelli, direttore della Casa della Cultura di Milano"

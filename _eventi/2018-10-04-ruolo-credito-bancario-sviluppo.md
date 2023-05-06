@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Il ruolo del credito bancario nello sviluppo delle economie"
 relatori: "Prof.ssa Laura Viganò (UNIBG)"

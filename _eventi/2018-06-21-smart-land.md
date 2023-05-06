@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Smart land e capitalismo intermedio"
 relatori: "Dott. Simone Bertolino (sociologo presso AASTER)"

@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Finalità e metodo della Next Generation EU e del PNRR"
 relatori: "Dott. Roberto Romano (ufficio studi CGIL)"

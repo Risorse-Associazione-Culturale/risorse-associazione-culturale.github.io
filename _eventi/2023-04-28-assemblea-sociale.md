@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Assemblea Sociale"
 relatori: "Tutti i soci sono invitati"

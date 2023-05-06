@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "La questione demografica"
 relatori: "Prof.ssa Patrizia Farina"

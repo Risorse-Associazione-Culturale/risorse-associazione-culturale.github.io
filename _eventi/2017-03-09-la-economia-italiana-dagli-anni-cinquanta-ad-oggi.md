@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "L'economia italiana dagli anni '50 ad oggi"
 relatori: "Dott. Sergio Ferrari"

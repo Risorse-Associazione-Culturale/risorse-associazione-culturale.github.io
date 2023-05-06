@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Memorial di Ferri Prof. Piero"
 relatori: "Prof. Riccardo Leoni e Prof.ssa Anna Maria Variato (UNIBG)"

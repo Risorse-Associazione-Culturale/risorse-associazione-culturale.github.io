@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "L’innovazione tecnologica, quale motore di un nuovo sviluppo, inizia dal territorio locale"
 relatori: "Dott. Stefano Ierace (Responsabile innovazione presso Confindustria Bergamo)"

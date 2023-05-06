@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Risorse minerarie e mercati globali"
 relatori: "Prof. Gianmarco Ottaviano (UNI Bocconi)"

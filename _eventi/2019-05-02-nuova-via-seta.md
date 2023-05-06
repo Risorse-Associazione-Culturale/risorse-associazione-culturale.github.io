@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "La nuova via della seta"
 relatori: "Prof. Dino Gavinelli (Presidente Centro Studi Problemi Internazionali)"

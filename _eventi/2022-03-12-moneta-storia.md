@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "La moneta e la sua storia"
 relatori: "Massimo Amato (UNIBocconi)"

@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "La nuova economia tra tecnologia e bisogni"
 relatori: "Dott. Aldo Bonomi (Presidente AASTER)"

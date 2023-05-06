@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "PNRR ed equità"
 relatori: "Prof. Dario Guarascio (UNI Sapienza Roma)"

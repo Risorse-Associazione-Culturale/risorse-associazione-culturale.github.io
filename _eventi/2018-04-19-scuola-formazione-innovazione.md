@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "La scuola, la formazione e l'innovazione tecnologica"
 relatori: "Dott. Francesco Sylos Labini (Ricercatore presso Centro Fermi, Roma)"

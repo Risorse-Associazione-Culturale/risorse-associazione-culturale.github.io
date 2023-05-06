@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Sviluppo sostenibile: un ossimoro?"
 relatori: "Prof. Marzio Galeotti"

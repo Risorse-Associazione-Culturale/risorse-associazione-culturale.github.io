@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "PNRR e transizione digitale e ambientale"
 relatori: "Prof. Leopoldo Nascia (ricercatore presso l'ISTAT)"

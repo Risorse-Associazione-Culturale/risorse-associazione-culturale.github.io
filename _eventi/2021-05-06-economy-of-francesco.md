@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "The Economy of Francesco. Narrazioni tra Eco-logia ed Eco-nomia"
 relatori: "Prof. Stefano Rozzoni (UNI Graz Austria)"

@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Il debito pubblico"
 relatori: "Prof. Roberto Artoni (UNIBocconi)"

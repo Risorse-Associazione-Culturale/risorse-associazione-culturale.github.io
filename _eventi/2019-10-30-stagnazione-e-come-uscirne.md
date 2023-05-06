@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Perché la stagnazione e come uscirne, la politica economica in crisi: una discussione aperta"
 relatori: "Prof. Riccardo Bellofiore (UNIBG)"

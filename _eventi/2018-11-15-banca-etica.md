@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "La banca etica in un mondo dominato dalla logica del profitto"
 relatori: "Dott. Maurizio Bianchetti (Consigliere di Banca Popolare Etica)"

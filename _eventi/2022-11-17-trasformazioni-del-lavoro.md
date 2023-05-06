@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Le trasformazioni del lavoro: critica delle innovazioni tecnologiche ed organizzative"
 relatori: "Dott. Matteo Gaddi (Funzionario sindacale)"

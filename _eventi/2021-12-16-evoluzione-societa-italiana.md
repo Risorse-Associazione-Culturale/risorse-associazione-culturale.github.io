@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "L'evoluzione recente della società italiana"
 relatori: "Dott. Massimiliano Valerii (DG del CENSIS)"

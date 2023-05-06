@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Instabilità, crescita e ineguaglianza"
 relatori: "Prof. Pietro Enrico Ferri"

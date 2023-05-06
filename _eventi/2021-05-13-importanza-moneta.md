@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Perchè la moneta è importante? La risposta ortodossa e quella della teoria monetaria moderna a confronto"
 relatori: "Prof.ssa Anna Maria Variato (UNIBG)"

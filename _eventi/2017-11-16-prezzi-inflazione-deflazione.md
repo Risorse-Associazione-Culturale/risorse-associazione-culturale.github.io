@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Prezzi, inflazione, deflazione"
 relatori: "Prof.ssa Anna Maria Variato (UNIBG)"

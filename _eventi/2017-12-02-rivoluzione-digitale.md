@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "rivoluzione digitale"
 relatori: "Prof. Gianluca Bocchi (UNIBG)"

@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Ripensamenti sulla globalizzazione"
 relatori: "Prof.ssa Giovanna Vertova (UNIBG)"

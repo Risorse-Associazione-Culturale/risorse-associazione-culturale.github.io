@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Innovazione tecnologica e mondo produttivo"
 relatori: "Prof. Riccardo Leoni (UNIBG)"

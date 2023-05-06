@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Tutti poveri al pensionamento? Pregi e criticità del sistema previdenziale italiano"
 relatori: "Prof. Michele Raitano (Università Sapienza di Roma)"

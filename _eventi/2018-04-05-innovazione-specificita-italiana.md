@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Scenari di innovazione tecnologica e la specificità italiana"
 relatori: "Dott.ssa Daniela Palma (Senior Researcher presso ENEA)"

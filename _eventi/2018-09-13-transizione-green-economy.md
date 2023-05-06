@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "La transizione alla green economy"
 relatori: "Edo Ronchi (già Ministro dell’ambiente)"

@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Capitalismo privato e di Stato in Cina"
 relatori: "Prof. Dino Gavinelli (Presidente Centro Studi Problemi Internazionali)"

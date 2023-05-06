@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Il ruolo delle imposte nell'era dell'economia globale digitalizzata"
 relatori: "Prof. Bruno Bosco (Università degli Studi di Milano - Bicocca)"

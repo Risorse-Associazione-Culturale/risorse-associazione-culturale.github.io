@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "La transizione energetica nella transizione ecologica"
 relatori: "Prof Marzio Galeotti (UNIBocconi)"

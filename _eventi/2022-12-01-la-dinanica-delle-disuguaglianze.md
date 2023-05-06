@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "La dinamica delle disuguaglianze e delle povertà: cause e possibili rimedi"
 relatori: "Prof.ssa Laura Pennacchi (economista – sottosegretario nei governi Ciampi e Prodi)"

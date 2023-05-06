@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Guerra, pandemia, energia, inflazione: i quattro fattori di crisi del triennio 2020-2022"
 relatori: "Dott. Massimiliano Valerii (DG del CENSIS)"

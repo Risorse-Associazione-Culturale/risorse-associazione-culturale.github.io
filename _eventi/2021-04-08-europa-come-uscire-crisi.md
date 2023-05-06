@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "La questione Europa. Come uscire dalla crisi"
 relatori: "Prof. Francesco Saraceno (vicedirettore Dipartimento OFCE Parigi)"

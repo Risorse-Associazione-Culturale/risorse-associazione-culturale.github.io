@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "L'invisibilità economica delle donne"
 relatori: "Prof.ssa Marcella Corsi (UNI Sapienza Roma)"

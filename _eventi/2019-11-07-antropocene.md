@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Antropocene: storia e futuro del rapporto fra gli uomini e la natura"
 relatori: "Prof. Guido Chelazzi (UNIFI)"

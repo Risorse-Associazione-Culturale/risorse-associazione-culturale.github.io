@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "La disuguaglianza e le sue cause"
 relatori: "Prof. Michele Raitano (UNI Sapienza Roma)"

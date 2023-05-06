@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Introduzione alla macroeconomia. Il reddito nazionale"
 relatori: "Prof.ssa Anna Maria Variato (UNIBG)"

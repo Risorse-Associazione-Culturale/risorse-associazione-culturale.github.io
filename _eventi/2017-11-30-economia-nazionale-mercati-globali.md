@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Economia nazionale. Mercati globali"
 relatori: "Prof. Stefano Lucarelli (UNIBG)"

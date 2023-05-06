@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "Le ragioni economiche delle guerre: globalizzazione, protezionismo, conflitti"
 relatori: "Prof. Stefano Lucarelli (UNIBG)"

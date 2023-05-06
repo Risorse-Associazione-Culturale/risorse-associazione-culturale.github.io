@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "L'impatto dei cambiamenti sulla società ed il ruolo dello Stato"
 relatori: "Prof. Mario Dogliani (UNITO)"

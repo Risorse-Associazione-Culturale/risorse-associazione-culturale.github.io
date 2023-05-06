@@ -1,5 +1,4 @@
 ---
-layout: event
 stato: "completato"
 titolo: "crisi cause esterne"
 relatori: "Prof. Gennaro Zezza (UNICassino)"
