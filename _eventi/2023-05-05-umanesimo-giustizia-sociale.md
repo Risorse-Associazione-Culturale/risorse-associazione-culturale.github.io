@@ -9,4 +9,5 @@ url_immagine: /img/events/umanesimo-socialista.jpg
 link:
   testo: "Visualizza la locandina"
   url: /img/events/2023-05-05-locandina-capelli-ferruccio.jpg
+registrazione: ""
 ---
