@@ -1,4 +1,4 @@
----o
+---
 stato: "completato"
 titolo: "Benessere e libertà sono variabili indipendenti? Quale è il rapporto tra dette variabili e la sostenibilità e la crescente digitalizzazione?"
 relatori: "Prof. Mauro Magatti"
