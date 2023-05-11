@@ -1,5 +1,5 @@
 ---
-testo: "L’aspetto economico dell’agire umano viene generalmente esaminato, dalla scienza economica, prendendo in considerazione gli uomini in quanto membri di una società; di qui il nome di economia politica, con il quale assai spesso la scienza economica è pure designata."
-autore: "Claudio Napoleoni (1924 – 1988)"
-immagine: "/img/quote/claudio-napoleoni.jpg"
+testo: "Il rovesciamento in cui il mezzo si trasforma in fine e il fine in mezzo è un fenomeno ben noto sin dagli inizi della cultura occidentale. Già Aristotele – la sua grande eco è Marx – osserva che nella ‘crematistica’ la ricchezza diventa, da mezzo, scopo della vita."
+autore: "Emanuele Severino (1929 – 2020)"
+immagine: "/img/quote/severino.jpg"
 ---
