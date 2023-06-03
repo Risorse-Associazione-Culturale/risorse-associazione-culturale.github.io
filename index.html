@@ -35,7 +35,10 @@ title: "Associazione RISORSE"
 		</div>
   </section>
 
-  {% include banner.html %}
+  {% assign collegamenti_len = site.collegamenti | size %}
+  {% if collegamenti_len > 0 %}
+  {% include links.html %}
+  {% endif %}
 
 {% if quote_position == 'top' %}
   {% include quote.html use_inverted_colors=use_inverted_colors_for_quote %}

@@ -27,3 +27,5 @@ collections:
     output: false
   bilanci:
     output: false
+  collegamenti:
+    output: false
