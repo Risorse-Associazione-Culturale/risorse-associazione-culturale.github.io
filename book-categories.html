@@ -1,0 +1,34 @@
+---
+layout: default
+show_in_header: true
+permalink: /categorie-libri
+title: Libri in primo piano
+index: 2
+---
+
+<div class="page">
+
+    <div class="text-container">
+      <ul class="book-categories">
+        {% for book_category in site.categorie-libri %}
+        <li class="book-category">
+          <p>{{ book_category.titolo }}</p>
+          {% assign books_in_category = site.libri | where: 'categoria', book_category.categoria %}
+          {% assign books_in_category_count = books_in_category.size %}
+          {% if books_in_category_count > 0 %}
+          <ul class="books">
+          {% for book in books_in_category %}
+            <li class="book">
+              <p>
+                <a class="muted-link" href="{{ book.url | prepend: site.baseurl }}">{{ book.titolo }},&nbsp;<i>{{ book.autori }}</i></a>
+              </p>
+            </li>
+          {% endfor %}
+          </ul>
+          {% endif %}
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  
+  </div>

@@ -1,0 +1,17 @@
+---
+layout: default
+---
+<div class="page book text-container">
+    <h2>{{ page.titolo }}</h2>
+
+    <p class="metadata">
+        {{ page.autori }}{% if page.edizione %} — <i>{{ page.edizione }}</i>{% endif %}
+    </p>
+
+    <div>
+        {% if page.immagine_copertina %}
+        <img src="{{ page.immagine_copertina }}" class="book-cover" alt="Copertina {{ page.titolo }}" />
+        {% endif %}
+        {{ content }}
+    </div>
+</div>

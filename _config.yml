@@ -27,5 +27,9 @@ collections:
     output: false
   bilanci:
     output: false
+  libri:
+    output: true
+  categorie-libri:
+    output: false
   collegamenti:
     output: false
