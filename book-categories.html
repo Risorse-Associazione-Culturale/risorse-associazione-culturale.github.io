@@ -20,7 +20,7 @@ index: 2
           {% for book in books_in_category %}
             <li class="book">
               <p>
-                <a class="muted-link" href="{{ book.url | prepend: site.baseurl }}">{{ book.titolo }},&nbsp;{{ book.autori }}</a>
+                <a class="muted-link" href="{{ book.url | prepend: site.baseurl }}">{{ book.titolo }},&nbsp;<i>{{ book.autori }}</i></a>
               </p>
             </li>
           {% endfor %}
