@@ -1,0 +1,8 @@
+<section class="links">
+    {% assign _collegamenti = site.collegamenti | sort: 'index' %}
+    {% for collegamento in _collegamenti %}
+    <div class="text-container">
+        {{ collegamento.content }}
+    </div>
+    {% endfor %}
+</section>
