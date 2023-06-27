@@ -1,5 +1,5 @@
 ---
-testo: "Un sistema di istruzione e formazione in grado di fornire adeguate competenze a tutti gli individui nelle diverse fasi e condizioni della propria esistenza è alla base della produttività, dell’innovazione e della resilienza di un Paese."
-autore: "CENSIS - 56° Rapporto sulla situazione sociale del Paese - 2022"
-immagine: "/img/quote/censis.jpg"
+testo: "“L’operare e il suo prodotto, l’’artificio umano’, conferiscono un elemento di continuità alla limitatezza della vita mortale e alla labilità del tempo umano."
+autore: "Hannah Arendt (1906 – 1976)"
+immagine: "/img/quote/hannah-arendt.jpg"
 ---
