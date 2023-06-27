@@ -1,6 +1,6 @@
 ---
 layout: book
-categoria: "storia-pensiero-economico"
+categoria: grandi-opere
 titolo: "Teoria generale dell’occupazione, dell’interesse e della moneta"
 autori: "John Maynard KEYNES"
 edizione: "De Agostini Libri S.p.A.- UTET, Novara, 2013"
