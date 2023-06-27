@@ -11,22 +11,24 @@ index: 2
     <div class="text-container">
       <ul class="book-categories">
         {% for book_category in site.categorie-libri %}
+        {% assign books_in_category = site.libri | where: 'categoria', book_category.categoria %}
+        {% assign books_in_category_count = books_in_category.size %}
+        {% if books_in_category_count > 0 %}
         <li class="book-category">
-          <p>{{ book_category.titolo }}</p>
-          {% assign books_in_category = site.libri | where: 'categoria', book_category.categoria %}
-          {% assign books_in_category_count = books_in_category.size %}
-          {% if books_in_category_count > 0 %}
+          <span>{{ book_category.titolo }}</span>
           <ul class="books">
           {% for book in books_in_category %}
             <li class="book">
-              <p>
-                <a class="muted-link" href="{{ book.url | prepend: site.baseurl }}">{{ book.titolo }},&nbsp;<i>{{ book.autori }}</i></a>
-              </p>
+              <span>
+                <a class="muted-link" href="{{ book.url | prepend: site.baseurl }}">{{ book.titolo }}</a>
+                <br />
+                <span class="metadata">{{ book.autori }} — <i>{{ book.edizione }}</i></span>
+              </span>
             </li>
           {% endfor %}
           </ul>
-          {% endif %}
         </li>
+        {% endif %}
         {% endfor %}
       </ul>
     </div>
