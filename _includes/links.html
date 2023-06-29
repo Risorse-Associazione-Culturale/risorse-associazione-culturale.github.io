@@ -1,6 +1,9 @@
 <section class="links">
     {% assign _collegamenti = site.collegamenti | sort: 'index' %}
     {% for collegamento in _collegamenti %}
+    {% if collegamento.metadata %}
+    <div class="metadata">{{ collegamento.metadata }}</div>
+    {% endif %}
     <div class="text-container">
         {{ collegamento.content }}
     </div>
