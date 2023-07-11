@@ -1,5 +1,5 @@
 ---
-testo: "L’operare e il suo prodotto, l'’artificio umano’, conferiscono un elemento di continuità alla limitatezza della vita mortale e alla labilità del tempo umano."
-autore: "Hannah Arendt (1906 – 1976)"
-immagine: "/img/quote/hannah-arendt.jpg"
+testo: "Lo sviluppo sostenibile è quello sviluppo che soddisfa i bisogni del presente senza compromettere la capacità delle future generazioni di soddisfare i propri."
+autore: "Gro Harlem Brundtland (1939)"
+immagine: "/img/quote/brundtland.jpg"
 ---
