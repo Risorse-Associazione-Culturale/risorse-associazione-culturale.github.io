@@ -1,5 +1,6 @@
 ---
-index: 4
+date: 2023-07-11
+sort_order: 0
 metadata: "Cambridge (Stati Uniti), 11 luglio 2023"
 ---
 

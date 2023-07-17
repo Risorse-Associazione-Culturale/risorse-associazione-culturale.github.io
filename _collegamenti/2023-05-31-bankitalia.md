@@ -1,5 +1,5 @@
 ---
-index: 0
+date: 2023-05-31
 metadata: "Roma, 31 maggio 2023"
 ---
 

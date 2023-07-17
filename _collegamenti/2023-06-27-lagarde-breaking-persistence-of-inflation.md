@@ -1,5 +1,5 @@
 ---
-index: 2
+date: 2023-06-27
 metadata: "27 giugno 2023"
 ---
 

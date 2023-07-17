@@ -1,5 +1,6 @@
 ---
-index: 3
+date: 2023-07-11
+sort_order: 1
 metadata: "11 luglio 2023"
 ---
 
