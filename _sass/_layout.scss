@@ -294,13 +294,9 @@ footer {
     .balance-sheet{
         font-weight: 300;
         margin-bottom: 15px;
+        list-style: none;
 
         p{
-            margin-bottom: 0px;
-        }
-
-        p.metadata{
-            font-style: italic;
             margin-bottom: 0px;
         }
     }

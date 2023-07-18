@@ -13,12 +13,17 @@ index: 3
     {% if bilanci_len > 0 %}
     <div class="text-container">
       <ul class="balance-sheets">
-        {% for balancio in bilanci %}
+        {% for bilancio in bilanci %}
         <li class="balance-sheet">
-          <p>Documentazione bilancio {{ balancio.anno }}</p>
-          <p class="metadata">
-              <a href="{{ balancio.download_link }}"><i class="bi bi-cloud-arrow-down-fill"></i> Scarica la documentazione</a>
-          </p>
+          <h4>Documentazione bilancio {{ bilancio.anno }}</h4>
+          {% assign documenti = bilancio.documenti %}
+          <ul>
+            {% for documento in documenti %}
+            <li class="metadata">
+                <a href="{{ documento.url }}"><i class="bi bi-cloud-arrow-down-fill"></i> {{ documento.testo }}</a>
+            </li>
+            {% endfor %}
+          </ul>
         </li>
         {% endfor %}
       </ul>
