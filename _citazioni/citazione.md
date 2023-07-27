@@ -1,5 +1,5 @@
 ---
-testo: "Lo sviluppo sostenibile è quello sviluppo che soddisfa i bisogni del presente senza compromettere la capacità delle future generazioni di soddisfare i propri."
-autore: "Gro Harlem Brundtland (1939)"
-immagine: "/img/quote/brundtland.jpg"
+testo: "Il compito della teoria economica di ogni sistema consiste nel formulare le leggi che governano il volume del surplus economico e il suo utilizzo."
+autore: "Witold Kula (1916-1988)"
+immagine: "/img/quote/kula.jpg"
 ---
