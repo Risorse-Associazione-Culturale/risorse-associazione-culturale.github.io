@@ -1,5 +1,5 @@
 ---
-date: 2023-06-23
+date: 2023-06-26
 metadata: "Roma, 26 giugno 2023"
 ---
 
