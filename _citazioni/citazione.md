@@ -1,5 +1,6 @@
 ---
-testo: "Il compito della teoria economica di ogni sistema consiste nel formulare le leggi che governano il volume del surplus economico e il suo utilizzo."
-autore: "Witold Kula (1916-1988)"
-immagine: "/img/quote/kula.jpg"
+testo: "La scienza economica è la scoperta delle connessioni logiche che esistono
+tra le variabili economiche."
+autore: "Giorgio Gattei (1944)"
+immagine: "/img/quote/gattei.jpg"
 ---
