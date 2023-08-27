@@ -143,18 +143,6 @@ section{
     }
 }
 
-section.links{
-    text-align: center;
-    border-top: 2px solid gainsboro;
-    border-bottom: 2px solid gainsboro;
-
-    .metadata{
-        font-size: $extra-small-font-size;
-        color: #666;
-        font-style: italic;
-    }
-}
-
 section{
     .event{
         padding-top: 50px;
