@@ -35,9 +35,9 @@ title: "Associazione RISORSE"
 		</div>
   </section>
 
-  {% assign collegamenti_len = site.collegamenti | size %}
-  {% if collegamenti_len > 0 %}
-  {% include links.html %}
+  {% assign documents_len = site.documenti | size %}
+  {% if documents_len > 0 %}
+  {% include documents.html %}
   {% endif %}
 
 {% if quote_position == 'top' %}

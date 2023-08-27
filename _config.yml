@@ -31,5 +31,5 @@ collections:
     output: true
   categorie-libri:
     output: false
-  collegamenti:
+  documenti:
     output: false
