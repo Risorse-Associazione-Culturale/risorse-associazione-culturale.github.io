@@ -3,7 +3,7 @@
         <div class="recent-documents-block">
             <h5>Documentazione</h5>
             {% assign _documents = site.documenti | sort: 'date' | reverse |  %}
-            {% for document in _documents limit:6 %}
+            {% for document in _documents limit:4 %}
             {% assign mod = forloop.index | modulo: 2 %}
             {% if mod != 0 %}
                 <div class="row recent-documents-row">
