@@ -1,0 +1,35 @@
+---
+layout: default
+show_in_header: true
+title: "Documenti"
+permalink: /archivio/documenti
+index: 3
+---
+
+<div class="page">
+
+  <div class="text-container">
+    <div class="documents-block">
+        <h5>Documentazione</h5>
+        {% assign _documents = site.documenti | sort: 'date' | reverse |  %}
+        {% for document in _documents %}
+        {% assign mod = forloop.index | modulo: 2 %}
+        {% if mod != 0 %}
+          <div class="row documents-row">
+          {% endif %}
+              <div class="col-md-6 document">
+                  {% if document.metadata %}
+                  <div class="metadata">{{ document.metadata }}</div>
+                  {% endif %}
+                  <div class="text-container">
+                      {{ document.content }}
+                  </div>
+              </div>
+          {% if mod == 0 %}
+          </div>
+          {% endif %}
+        {% endfor %}
+      </div>
+  </div>
+
+</div>

@@ -3,7 +3,7 @@ layout: page
 show_in_header: true
 title: "Privacy"
 permalink: /privacy
-index: 4
+index: 5
 ---
 
 # Informativa Privacy
