@@ -1,11 +1,28 @@
 <section class="links">
-    {% assign _collegamenti = site.collegamenti | sort: 'date' %}
-    {% for collegamento in _collegamenti %}
-    {% if collegamento.metadata %}
-    <div class="metadata">{{ collegamento.metadata }}</div>
-    {% endif %}
-    <div class="text-container">
-        {{ collegamento.content }}
+    <div class="container flex">
+        <div class="recent-documents-block">
+            <h5>Documentazione</h5>
+            {% assign _collegamenti = site.collegamenti | sort: 'date' | reverse |  %}
+            {% for collegamento in _collegamenti limit:6 %}
+            {% assign mod = forloop.index | modulo: 2 %}
+            {% if mod != 0 %}
+                <div class="row recent-documents-row">
+                {% endif %}
+                    <div class="col-md-6 recent-document">
+                        {% if collegamento.metadata %}
+                        <div class="metadata">{{ collegamento.metadata }}</div>
+                        {% endif %}
+                        <div class="text-container">
+                            {{ collegamento.content }}
+                        </div>
+                    </div>
+                {% if mod == 0 %}
+                </div>
+                {% endif %}
+                    {% endfor %}
+                <div class="row all-past-documents">
+                    <a href="{{ "/archivio/documenti" | prepend: site.baseurl }}">Visualizza tutti i documenti</a>
+                </div>
+        </div>
     </div>
-    {% endfor %}
 </section>
