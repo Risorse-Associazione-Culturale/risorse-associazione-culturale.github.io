@@ -1,6 +1,6 @@
 ---
-testo: "La scienza economica è la scoperta delle connessioni logiche che esistono
-tra le variabili economiche."
-autore: "Giorgio Gattei (1944)"
-immagine: "/img/quote/gattei.jpg"
+testo: "Ogni cosa è connessa alle altre."
+autore: "Ervin László (1932)"
+bio: "Filosofo, fondatore della teoria dei sistemi"
+immagine: "/img/quote/laszlo.jpg"
 ---
