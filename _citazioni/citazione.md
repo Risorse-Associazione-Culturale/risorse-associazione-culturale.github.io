@@ -1,6 +1,5 @@
 ---
-testo: "Ogni cosa è connessa alle altre."
-autore: "Ervin László (1932)"
-bio: "Filosofo, fondatore della teoria dei sistemi"
-immagine: "/img/quote/laszlo.jpg"
+testo: "La bassa propensione individuale all’apprendimento permanente, le insufficienti opportunità offerte dal sistema educativo e una formazione sul lavoro ancora non entrata nel Dna delle imprese italiane, soprattutto se piccole e medie, collocano l’Italia in una posizione di retroguardia anche in merito alla manutenzione delle competenze."
+autore: "55° Rapporto sulla situazione sociale del Paese - 2021"
+immagine: "/img/quote/censis.jpg"
 ---
