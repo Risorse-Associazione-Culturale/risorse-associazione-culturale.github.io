@@ -14,7 +14,7 @@ index: 1
       {% for event in past_events %}
       <li class="past-event">
         <p class="metadata">
-          <a href="https://github.com/{{ site.github_org }}/{{ site.github_repository }}/tree/master/{{ event.path }}" target="_blank">
+          <a href="https://github.com/{{ site.github_org }}/{{ site.github_repository }}/tree/main/{{ event.path }}" target="_blank">
             <i class="bi bi-calendar2-event"></i>
           </a>&nbsp;
           <span>{% include translated_date.html date=event.data_evento format="%-d %B %Y" %}</span>
