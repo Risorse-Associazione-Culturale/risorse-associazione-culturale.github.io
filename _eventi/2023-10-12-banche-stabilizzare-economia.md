@@ -1,5 +1,5 @@
 ---
-stato: "futuro"
+stato: "completato"
 titolo: "Le banche possono stabilizzare l’economia?"
 relatori: "Prof.ssa Anna Maria Variato (Università degli Studi di Bergamo)"
 data_evento: "2023-10-12"
