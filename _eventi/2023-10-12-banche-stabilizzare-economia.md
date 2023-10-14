@@ -9,5 +9,5 @@ url_immagine: /img/events/bank.jpg
 link:
   testo: "Visualizza la locandina"
   url: /img/events/2023-10-12-banche-stabilizzare-economia.png
-registrazione: ""
+registrazione: "https://youtu.be/luD_oa6dyuA"
 ---
