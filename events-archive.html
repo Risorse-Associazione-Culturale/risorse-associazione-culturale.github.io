@@ -22,7 +22,18 @@ index: 1
           <span>- {{ event.relatori }}</span>
           {% endif %}
         </p>
+        {% if event.titolo %}
         <p>{{ event.titolo }}</p>
+        {% endif %}
+        {% if event.sessioni %}
+        <ul>
+        {% for session in event.sessioni %}
+            <li>
+              <p>{{ session.titolo }} <span class="metadata">- {{ session.relatori }}</span></p>
+            </li>
+        {% endfor %}
+        </ul>
+        {% endif %}
         {% if event.registrazione %}
           <p class="metadata">
             {% if event.registrazione == "" %}
