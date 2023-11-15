@@ -1,0 +1,10 @@
+{% if include.sessions %}
+<ul>
+{% for session in include.sessions %}
+    <li>
+        {% include event_title.html title=session.titolo %}
+        {% include event_speakers.html speakers=session.relatori %}
+    </li>
+{% endfor %}
+</ul>
+{% endif %}

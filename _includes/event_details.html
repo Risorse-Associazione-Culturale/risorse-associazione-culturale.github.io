@@ -1,16 +1,7 @@
 {% include event_date_time.html date=include.event.data_evento time=include.event.ora_evento %}
-<h4>
-    {{ include.event.titolo }}
-</h4>
+{% include event_title.html title=include.event.titolo %}
 {% include event_speakers.html speakers=include.event.relatori %}
+{% include event_sessions.html sessions=include.event.sessioni %}
 {% include event_location.html event=include.event %}
-{% if include.event.abstract %}
-<p>{{ include.event.abstract }}</p>
-{% endif %}
-{% if include.event.link %}
-<p class="metadata">
-    <a href="{{ include.event.link.url }}"
-        title="{{ include.event.link.testo }}"
-        target="_blank">{{ include.event.link.testo }}</a>
-</p>
-{% endif %}
+{% include event_abstract.html abstract=include.abstract %}
+{% include event_link.html link=include.link %}
