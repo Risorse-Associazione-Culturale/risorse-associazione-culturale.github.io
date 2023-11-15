@@ -54,13 +54,12 @@ title: "Associazione RISORSE"
                  image_alt=first_upcoming_event.titolo
       %}
       <div>
-        <h3>
-          {{ first_upcoming_event.titolo }}
-        </h3>
+        {% include event_main_title.html title=first_upcoming_event.titolo %}
         {% include event_speakers.html speakers=first_upcoming_event.relatori %}
         {% include event_date_time.html
                    date=first_upcoming_event.data_evento
                    time=first_upcoming_event.ora_evento %}
+        {% include event_sessions.html sessions=first_upcoming_event.sessioni %}
         {% include event_location.html event=first_upcoming_event is_main_event=true %}
         {% if first_upcoming_event.abstract %}
         <p>{{ first_upcoming_event.abstract }}</p>
@@ -93,7 +92,18 @@ title: "Associazione RISORSE"
                 <span>- {{ recent_event.relatori }}</span>
                 {% endif %}
               </p>
+              {% if recent_event.titolo %}
               <p>{{ recent_event.titolo }}</p>
+              {% endif %}
+              {% if recent_event.sessioni %}
+              <ul>
+              {% for session in recent_event.sessioni %}
+                  <li>
+                    <p>{{ session.titolo }} <span class="metadata">- {{ session.relatori }}</span></p>
+                  </li>
+              {% endfor %}
+              </ul>
+              {% endif %}
               <p class="metadata">
                 {% if recent_event.registrazione %}
                   {% if recent_event.registrazione == "" %}
