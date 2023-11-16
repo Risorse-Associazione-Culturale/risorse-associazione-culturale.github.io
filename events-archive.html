@@ -25,6 +25,9 @@ index: 1
         {% if event.titolo %}
         <p>{{ event.titolo }}</p>
         {% endif %}
+        {% if event.sottotitolo %}
+        <p class="metadata">{{ event.sottotitolo }}</p>
+        {% endif %}
         {% if event.sessioni %}
         <ul>
         {% for session in event.sessioni %}

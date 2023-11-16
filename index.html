@@ -59,6 +59,7 @@ title: "Associazione RISORSE"
         {% include event_date_time.html
                    date=first_upcoming_event.data_evento
                    time=first_upcoming_event.ora_evento %}
+        {% include event_main_subtitle.html subtitle=first_upcoming_event.sottotitolo %}
         {% include event_sessions.html sessions=first_upcoming_event.sessioni %}
         {% include event_location.html event=first_upcoming_event is_main_event=true %}
         {% if first_upcoming_event.abstract %}
@@ -94,6 +95,9 @@ title: "Associazione RISORSE"
               </p>
               {% if recent_event.titolo %}
               <p>{{ recent_event.titolo }}</p>
+              {% endif %}
+              {% if recent_event.sottotitolo %}
+              <p class="metadata">{{ recent_event.sottotitolo }}</p>
               {% endif %}
               {% if recent_event.sessioni %}
               <ul>
