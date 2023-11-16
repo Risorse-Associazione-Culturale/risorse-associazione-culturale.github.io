@@ -10,5 +10,5 @@ ora_evento: "9:30 - 12:00"
 luogo: "Teatro Nuovo Treviglio (TNT) - Piazza Garibaldi, Treviglio"
 link:
   testo: "Visualizza la locandina"
-  url: /img/events/2023-11-10-mondo-multipolare.jpg
+  url: /assets/2023-11-25-multisessione-ai-social-media.pdf
 ---
