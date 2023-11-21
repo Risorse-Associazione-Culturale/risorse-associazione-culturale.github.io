@@ -9,6 +9,7 @@ sessioni:
 data_evento: "2023-11-25"
 ora_evento: "9:30 - 12:00"
 luogo: "Teatro Nuovo Treviglio (TNT) - Piazza Garibaldi, Treviglio"
+url_immagine: /img/events/default-header-1.jpg
 link:
   testo: "Visualizza la locandina"
   url: /assets/2023-11-25-multisessione-ai-social-media.pdf
