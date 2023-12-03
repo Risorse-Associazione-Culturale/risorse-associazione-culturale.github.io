@@ -104,6 +104,19 @@ title: "Associazione RISORSE"
               {% for session in recent_event.sessioni %}
                   <li>
                     <p>{{ session.titolo }} <span class="metadata">- {{ session.relatori }}</span></p>
+		    <p class="metadata">
+                    {% if session.registrazione %}
+                      {% if session.registrazione == "" %}
+                         <a href="javascript:void(0);" title="Registrazione in fase di elaborazione">
+                           <i class="bi bi-hourglass-split"></i> Registrazione in elaborazione
+                         </a>
+                      {% else %}
+                         <a href="{{ recent_event.registrazione }}" title="Visualizza la registrazione" target="_blank">
+                           <i class="bi bi-youtube"></i> Visualizza la registrazione
+                         </a>
+                      {% endif %}
+                    {% endif %}
+                    </p>
                   </li>
               {% endfor %}
               </ul>
