@@ -1,5 +1,5 @@
 ---
-stato: "futuro"
+stato: "completato"
 sottotitolo: "Con la collaborazione di MateXplora"
 sessioni:
 - titolo: "Lo sviluppo dell’Intelligenza Artificiale: impatti positivi e negativi"
