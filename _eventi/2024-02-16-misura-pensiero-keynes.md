@@ -6,7 +6,7 @@ sessioni:
   relatori: "Prof.ssa Anna Maria Variato — Università degli studi di Bergamo"
 data_evento: "2024-02-16"
 ora_evento: "21:00"
-luogo: "Sala Auser - Via Michelangelo merisi, 6 — Treviglio (BG)"
+luogo: "Sala Auser - Via Michelangelo Merisi, 6 — Treviglio (BG)"
 url_immagine: /img/events/default-header-1.jpg
 link:
   testo: "Visualizza la locandina"
