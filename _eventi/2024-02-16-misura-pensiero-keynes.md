@@ -1,5 +1,5 @@
 ---
-stato: "Completato"
+stato: "completato"
 titolo: "Primavera 2024 — Presentazione del tema e dialogo"
 sessioni:
 - titolo: "In che misura il pensiero di Keynes è ancora attuale?"
