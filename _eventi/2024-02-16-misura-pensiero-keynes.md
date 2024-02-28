@@ -14,5 +14,5 @@ link:
   url: /assets/2024-02-16-risorse-dialogo.pdf
 allegati:
   - nome: "Slide in PowerPoint"
-    url: /assets/allegati/2024-02-16-attualità-di-keynes-risorse.pptx
+    url: /assets/allegati/2024-02-16-attualita-di-keynes-risorse.pptx
 ---
