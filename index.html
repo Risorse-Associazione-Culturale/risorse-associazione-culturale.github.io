@@ -135,6 +135,15 @@ title: "Associazione RISORSE"
                   {% endif %}
                 {% endif %}
               </p>
+              {% if recent_event.allegati %}
+              <p class="metadata">
+                <i class="bi bi-paperclip"></i> Allegati:
+                <ul>
+                {% for allegato in recent_event.allegati %}
+                  <li><a href="{{ allegato.url }}" target="_blank">{{ allegato.nome }}</a></li>
+                {% endfor %}
+                </ul>
+              {% endif %}
             </div>
           {% if mod == 0 %}
           </div>

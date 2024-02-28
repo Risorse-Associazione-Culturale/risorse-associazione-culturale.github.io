@@ -59,6 +59,15 @@ index: 1
             {% endif %}
           </p>
         {% endif %}
+        {% if event.allegati %}
+        <p class="metadata">
+          <i class="bi bi-paperclip"></i> Allegati:
+          <ul>
+          {% for allegato in event.allegati %}
+            <li><a href="{{ allegato.url }}" target="_blank">{{ allegato.nome }}</a></li>
+          {% endfor %}
+          </ul>
+        {% endif %}
       </li>
       {% endfor %}
     </ul>
