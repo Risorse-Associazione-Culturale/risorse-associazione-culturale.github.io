@@ -1,6 +1,6 @@
 ---
-testo: "Gli economisti si preoccupano della produttività in virtù del suo stretto legame con la crescita dei salari e del tenore di vita"
-autore: "Paul A. Samuelson"
-bio: "(1915 – 2009) – Premio Nobel 1970 per l’Economia"
-immagine: "/img/quote/p-samuelson.jpg"
+testo: "L’economia è la traduzione materiale dello sviluppo ‘spirituale’ di un popolo"
+autore: "Max Weber"
+bio: "Sociologo (1864-1920)"
+immagine: "/img/quote/max-weber.jpg"
 ---
