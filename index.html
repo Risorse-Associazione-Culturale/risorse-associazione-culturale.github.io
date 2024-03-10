@@ -55,11 +55,11 @@ title: "Associazione RISORSE"
       %}
       <div>
         {% include event_main_title.html title=first_upcoming_event.titolo %}
+        {% include event_main_subtitle.html subtitle=first_upcoming_event.sottotitolo %}
         {% include event_speakers.html speakers=first_upcoming_event.relatori %}
         {% include event_date_time.html
                    date=first_upcoming_event.data_evento
                    time=first_upcoming_event.ora_evento %}
-        {% include event_main_subtitle.html subtitle=first_upcoming_event.sottotitolo %}
         {% include event_sessions.html sessions=first_upcoming_event.sessioni %}
         {% include event_location.html event=first_upcoming_event is_main_event=true %}
         {% if first_upcoming_event.abstract %}
