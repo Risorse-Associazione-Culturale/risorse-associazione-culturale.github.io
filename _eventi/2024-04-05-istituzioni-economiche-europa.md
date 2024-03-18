@@ -1,6 +1,6 @@
 ---
 stato: "futuro"
-titolo: "L'unione Europea"
+titolo: "L'Unione Europea"
 sottotitolo: "Primavera 2024 — 15° Ciclo di conferenze"
 sessioni:
 - titolo: "Le istituzioni economiche dell'Europa"
