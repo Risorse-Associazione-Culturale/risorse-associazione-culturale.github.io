@@ -1,6 +1,6 @@
 ---
-testo: "L’economia è la traduzione materiale dello sviluppo ‘spirituale’ di un popolo"
-autore: "Max Weber"
-bio: "Sociologo (1864-1920)"
-immagine: "/img/quote/max-weber.jpg"
+testo: "Il passato è il prologo mentre il futuro è affidato alla tua azione a alla mia"
+autore: "William Shakespeare"
+bio: "(1564 – 1616)"
+immagine: "/img/quote/shakespeare.jpg"
 ---
