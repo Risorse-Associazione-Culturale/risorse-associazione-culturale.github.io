@@ -11,5 +11,5 @@ luogo: "Istituto statale G. Oberdan — Via Michelangelo Merisi, 6 — Treviglio
 url_immagine: /img/events/ciclo-promavera-2024-locandina.jpg
 link:
   testo: "Visualizza la locandina (pdf)"
-  url: /assets/ciclo-promavera-2024-locandina.pdf
+  url: /assets/2024-04-05-istituzioni-economiche-europa.pdf
 ---
