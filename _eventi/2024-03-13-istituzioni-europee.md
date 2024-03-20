@@ -12,4 +12,8 @@ url_immagine: /img/events/ciclo-promavera-2024-locandina.jpg
 link:
   testo: "Visualizza la locandina (pdf)"
   url: /assets/ciclo-promavera-2024-locandina.pdf
+registrazione: https://youtu.be/lLYaKCiMNrw
+allegati:
+  - nome: "Slide in PowerPoint"
+    url: /assets/allegati/2024-03-13-istituzioni-europee.pptx
 ---
