@@ -1,6 +1,6 @@
 ---
-testo: "Il passato è il prologo mentre il futuro è affidato alla tua azione a alla mia"
-autore: "William Shakespeare"
-bio: "(1564 – 1616)"
-immagine: "/img/quote/shakespeare.jpg"
+testo: "Il lavoro annuale di ogni nazione è il fondo da cui originariamente provengono tutti i mezzi di sussistenza e di comodo che essa annualmente consuma, e che sempre consistono del prodotto diretto del lavoro o di ciò che con esso viene acquistato da altre nazioni"
+autore: "Adam Smith (1723 – 1790) "
+bio: "Sulla natura e sulle cause della ricchezza delle nazioni (1776)"
+immagine: "/img/quote/adam-smith.jpeg"
 ---
