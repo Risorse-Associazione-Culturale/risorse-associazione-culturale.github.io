@@ -1,5 +1,5 @@
 ---
-stato: "futuro"
+stato: "completato"
 titolo: "L'Unione Europea"
 sottotitolo: "Primavera 2024 — 15° Ciclo di conferenze"
 sessioni:
