@@ -1,6 +1,6 @@
 ---
 stato: "completato"
-titolo: "L'unione Europea"
+titolo: "L'Unione Europea"
 sottotitolo: "Primavera 2024 — 15° Ciclo di conferenze"
 sessioni:
 - titolo: "Le istituzioni Europee"
