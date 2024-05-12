@@ -1,5 +1,5 @@
 ---
-stato: "futuro"
+stato: "completato"
 titolo: "L'Unione Europea"
 sottotitolo: "Primavera 2024 — 15° Ciclo di conferenze"
 sessioni:
@@ -13,4 +13,5 @@ url_immagine: /img/events/ciclo-promavera-2024-locandina.jpg
 link:
   testo: "Visualizza la locandina (pdf)"
   url: /assets/ciclo-promavera-2024-locandina.pdf
+registrazione: https://youtu.be/D2-ITthrmSM
 ---
