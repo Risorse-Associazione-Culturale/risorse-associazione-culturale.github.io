@@ -7,7 +7,7 @@ sessioni:
   relatori: "Prof. Pier Giorgio Ardeni (Università di Bologna)"
 data_evento: "2024-06-14"
 ora_evento: "20:45"
-luogo_evento" "Sala Auser, viale Michelangelo Merisi, 6 — Treviglio (BG)"
+luogo_evento: "Sala Auser, viale Michelangelo Merisi, 6 — Treviglio (BG)"
 url_immagine: /img/events/ciclo-promavera-2024-locandina.jpg
 link:
   testo: "Visualizza le slide (PowerPoint)"
