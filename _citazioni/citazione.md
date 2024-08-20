@@ -1,6 +1,6 @@
 ---
-testo: "L’età della cavalleria è finita; è subentrata quella dei sofisti, degli economisti e dei calcolatori"
-autore: "Edmund Burke"
-bio: "(1854 – 1900)"
-immagine: "/img/quote/edmund-burke.jpg"
+testo: "Il modo migliore per rispondere all’inflazione dipende dalla fonte della perturbativa, ossia da che cosa l’ha scatenata"
+autore: "Joseph E. Stiglitz"
+bio: "Premio Nobel per l’Economia 2001"
+immagine: "/img/quote/joseph-e-stiglitz.jpg"
 ---
