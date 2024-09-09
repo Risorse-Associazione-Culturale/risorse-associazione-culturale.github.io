@@ -1,6 +1,6 @@
 ---
-testo: "Il modo migliore per rispondere all’inflazione dipende dalla fonte della perturbativa, ossia da che cosa l’ha scatenata"
-autore: "Joseph E. Stiglitz"
-bio: "Premio Nobel per l’Economia 2001"
-immagine: "/img/quote/joseph-e-stiglitz.jpg"
+testo: "Tranne in punti di mero dettaglio, non vi è forse alcuna questione pratica, anche tra quelle che maggiormente presentino i caratteri di questioni puramente teoriche, che ammetta di essere risolta soltanto in base a premesse economiche"
+autore: "John Stuart Mill"
+bio: "(1806-1873)"
+immagine: "/img/quote/john-stuart-mill.jpg"
 ---
