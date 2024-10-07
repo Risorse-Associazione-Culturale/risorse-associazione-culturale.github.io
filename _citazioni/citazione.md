@@ -1,6 +1,6 @@
 ---
-testo: "Tranne in punti di mero dettaglio, non vi è forse alcuna questione pratica, anche tra quelle che maggiormente presentino i caratteri di questioni puramente teoriche, che ammetta di essere risolta soltanto in base a premesse economiche"
-autore: "John Stuart Mill"
-bio: "(1806-1873)"
-immagine: "/img/quote/john-stuart-mill.jpg"
+testo: "Lungi da me pensare che l’aspetto economico sia quello che definisce l’essenza della vita umana. Ne costituisce una parte importante, per la funzione centrale che il lavoro e le scelte economiche hanno per le nostre vite: non solo perché condizionano la nostra capacità di vivere una vita piena, ma perché contribuiscono a definire la nostra identità di membri di una comunità"
+autore: "Fabio PANETTA"
+bio: "Governatore della Banca d’Italia"
+immagine: "/img/quote/fabio-panetta.jpg"
 ---
