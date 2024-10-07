@@ -8,5 +8,6 @@ sessioni:
 data_evento: "2024-12-05"
 ora_evento: "20:45"
 url_immagine: /img/events/ciclo-autunno-2024-locandina.jpg
-link_evento_online: ""
+evento_online: true
+# link_evento_online: ""
 ---
