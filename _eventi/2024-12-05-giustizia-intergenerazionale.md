@@ -7,7 +7,6 @@ sessioni:
   relatori: "Prof.ssa Eleonora Trappolini (UNIROMA1 La Sapienza)"
 data_evento: "2024-12-05"
 ora_evento: "20:45"
-luogo: "Istituto G. Oberdan, Treviglio (BG)"
 url_immagine: /img/events/ciclo-autunno-2024-locandina.jpg
 link_evento_online: ""
 ---
