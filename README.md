@@ -6,6 +6,8 @@ Either install Jekyll locally or use VS Code Dev Containers. Once installed, sta
 jekyll serve --watch --force_polling --verbose --livereload --incremental [--drafts]
 ```
 
+To run a clean build, run `jekyll clean` before serving the website.
+
 ## How to run locally using Jekyll on Windows Linux Subsystem (Ubuntu)
 
 ### Get Ubuntu up to date and install Ruby
