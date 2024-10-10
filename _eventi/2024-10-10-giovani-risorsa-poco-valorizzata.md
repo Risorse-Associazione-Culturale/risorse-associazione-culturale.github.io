@@ -8,5 +8,5 @@ sessioni:
 data_evento: "2024-10-10"
 ora_evento: "20:45"
 luogo: "Centro Salesiano Don Bosco — Via Zanovello, 1 — Treviglio (BG)"
-url_immagine: /img/events/ciclo-autunno-2024-locandina.jpg
+url_immagine: /img/events/2024-10-10-giovani-risorsa-poco-valorizzata.jpg
 ---
