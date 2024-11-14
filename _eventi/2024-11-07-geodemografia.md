@@ -1,5 +1,5 @@
 ---
-stato: "futuro"
+stato: "completato"
 titolo: "L'inverno demografico e le sue conseguenze sociali ed economiche"
 sottotitolo: "Autunno 2024 — Ciclo di conferenze"
 sessioni:
