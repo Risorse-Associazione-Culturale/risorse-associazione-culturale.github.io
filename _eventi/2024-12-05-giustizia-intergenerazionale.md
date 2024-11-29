@@ -7,7 +7,7 @@ sessioni:
   relatori: "Prof.ssa Eleonora Trappolini (UNIROMA1 La Sapienza)"
 data_evento: "2024-12-05"
 ora_evento: "20:45"
-url_immagine: /img/events/ciclo-autunno-2024-locandina.jpg
+url_immagine: /img/events/2024-12-05-giustizia-intergenerazionale.jpg
 evento_online: true
-# link_evento_online: ""
+link_evento_online: "https://us02web.zoom.us/j/88001949752?pwd=Ss1ST3lpx4xEMlTzXEjWWh6Yt9BYHi.1"
 ---
