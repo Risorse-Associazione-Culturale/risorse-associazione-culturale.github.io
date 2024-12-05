@@ -1,6 +1,6 @@
 ---
-testo: "È elemento essenziale della democrazia possedere un senso della storia"
-autore: "Franklin Delano Roosevelt"
-bio: "(1882 – 1945)"
-immagine: "/img/quote/franklin-delano-roosevelt.jpg"
+testo: "È un processo di semplificazione che rende lo studio dell’economia così appassionante. Imparando poche relazioni fondamentali si possono ignorare centinaia di dettagli insignificanti e rilevare quelle poche informazioni importanti che contengono gli indizi sul futuro andamento dell’economia. Si comincia a capire quali dei nostri obiettivi personali e nazionali possono essere raggiunti, quali sono incompatibili, e quali sono solo vane speranze"
+autore: "Robert J. Gordon"
+bio: "(1940)"
+immagine: "/img/quote/robert-j-gordon.png"
 ---
