@@ -1,6 +1,6 @@
 ---
-testo: "La Rivoluzione Industriale non fu un episodio con un principio e una fine […] è ancora in corso"
-autore: "Eric J. E. Hobsbawm"
-bio: "(1917 – 2012)"
-immagine: "/img/quote/eric-j-e-hobsbawm.jpg"
+testo: "Oggi viviamo in un mondo multipolare, e il principale problema è quello di garantire che i suoi membri possano cooperare anziché trincerarsi in una condizione di reciproca ostilità"
+autore: "Martin Daunton"
+bio: "(1949)"
+immagine: "/img/quote/martin-daunton.jpg"
 ---
