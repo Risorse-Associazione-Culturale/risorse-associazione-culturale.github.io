@@ -2,7 +2,7 @@
 stato: "completato"
 titolo: "Capitalismo finanziario, oligarchia tecnoligia e democrazia"
 relatori: "Roberto Romano (economista ESTA')"
-data_evento: "2024-05-16"
+data_evento: "2025-05-16"
 registrazione: https://youtu.be/wYPi-VBP2cM
 allegati:
 - nome: "Slide PowerPoint"
