@@ -54,4 +54,4 @@ Storicamente uno dei primi istituti superiori sorto a Treviglio, è inserito da 
 
 Con il Tuo aiuto possiamo arricchire i contributi offerti ai lettori e offrire nuovi servizi. Con un contributo annuale di almeno € 30,00 (€ 5,00 per gli studenti), se lo desideri, puoi acquisire la qualità di socio.
 
-Il nostro IBAN è: IT82 W088 9953 6400 0000 0027919
+Il nostro IBAN è: IT 45N 0844 05364 0000000027919
