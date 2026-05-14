@@ -5,5 +5,5 @@ relatori: "Anna Maria Variato (Università degli studi di Bergamo), Roverto Fest
 luogo: "TNT Spazio HUB 1 — Piazza Garibaldi 7, Treviglio"
 data_evento: "2026-05-27"
 ora_evento: "21:00"
-url_immagine: /img/events/assets/2026-05-27-lato-oscuro-forza.png
+url_immagine: /img/events/2026-05-27-lato-oscuro-forza.png
 ---
