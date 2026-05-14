@@ -1,5 +1,5 @@
 ---
-stato: "futuro"
+stato: "completato"
 titolo: "La costituzione italiana e l'economia"
 relatori: "Iolanda Carrara"
 luogo: "Sala AUSER via M. Merisio 6 — Treviglio"
